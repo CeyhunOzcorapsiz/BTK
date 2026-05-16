@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERPilot AI | Akilli ERP Asistani</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar" aria-label="ERP modulleri">
+        <div class="brand">
+          <div class="brand-mark">E</div>
+          <div>
+            <strong>ERPilot AI</strong>
+            <span>Kurumsal zeka asistani</span>
+          </div>
+        </div>
+
+        <nav class="module-nav">
+          <button class="module-item active" data-module="dashboard">
+            <span class="icon">⌂</span>
+            Genel Bakis
+          </button>
+          <button class="module-item" data-module="finance">
+            <span class="icon">₺</span>
+            Finans
+          </button>
+          <button class="module-item" data-module="accounting">
+            <span class="icon">≡</span>
+            Muhasebe
+          </button>
+          <button class="module-item" data-module="stock">
+            <span class="icon">□</span>
+            Stok
+          </button>
+          <button class="module-item" data-module="sales">
+            <span class="icon">↗</span>
+            Satis
+          </button>
+          <button class="module-item" data-module="customers">
+            <span class="icon">◎</span>
+            Cari Hesaplar
+          </button>
+        </nav>
+
+        <div class="sidebar-note">
+          <span>Canli demo akisi</span>
+          <strong>Asistana doğal dille sor, ERP verisi rapora donussun.</strong>
+        </div>
+      </aside>
+
+      <section class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Mayis 2026 operasyon ozeti</p>
+            <h1>Yonetici Paneli</h1>
+          </div>
+          <div class="topbar-actions">
+            <button class="ghost-button" id="monthlySummaryBtn">Yonetici ozeti</button>
+            <button class="primary-button" id="riskReportBtn">Riskleri goster</button>
+          </div>
+        </header>
+
+        <section class="kpi-grid" aria-label="Ana metrikler">
+          <article class="kpi-card">
+            <span>Gelir</span>
+            <strong>₺1.284.000</strong>
+            <small class="good">+18% gecen aya gore</small>
+          </article>
+          <article class="kpi-card">
+            <span>Gider</span>
+            <strong>₺842.000</strong>
+            <small class="warn">Pazarlama +24%</small>
+          </article>
+          <article class="kpi-card">
+            <span>Net Kar</span>
+            <strong>₺442.000</strong>
+            <small class="good">Kar marji %34,4</small>
+          </article>
+          <article class="kpi-card urgent">
+            <span>Tahsilat Riski</span>
+            <strong>₺186.500</strong>
+            <small>3 geciken musteri</small>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <article class="panel revenue-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Akilli raporlama</p>
+                <h2>Gelir ve gider trendi</h2>
+              </div>
+              <span class="status-pill">AI yorum hazir</span>
+            </div>
+            <div class="chart" aria-label="Gelir gider grafigi">
+              <div class="bar-group">
+                <span class="bar revenue" style="height: 58%"></span>
+                <span class="bar expense" style="height: 42%"></span>
+                <small>Oca</small>
+              </div>
+              <div class="bar-group">
+                <span class="bar revenue" style="height: 62%"></span>
+                <span class="bar expense" style="height: 47%"></span>
+                <small>Sub</small>
+              </div>
+              <div class="bar-group">
+                <span class="bar revenue" style="height: 68%"></span>
+                <span class="bar expense" style="height: 50%"></span>
+                <small>Mar</small>
+              </div>
+              <div class="bar-group">
+                <span class="bar revenue" style="height: 72%"></span>
+                <span class="bar expense" style="height: 57%"></span>
+                <small>Nis</small>
+              </div>
+              <div class="bar-group">
+                <span class="bar revenue" style="height: 86%"></span>
+                <span class="bar expense" style="height: 61%"></span>
+                <small>May</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Oncelikli uyarilar</p>
+                <h2>Bugun ilgilenilecekler</h2>
+              </div>
+            </div>
+            <div class="alert-list" id="alertList"></div>
+          </article>
+
+          <article class="panel table-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Cari hesaplar</p>
+                <h2>Riskli tahsilatlar</h2>
+              </div>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Musteri</th>
+                  <th>Tutar</th>
+                  <th>Gecikme</th>
+                  <th>Durum</th>
+                </tr>
+              </thead>
+              <tbody id="riskTable"></tbody>
+            </table>
+          </article>
+
+          <article class="panel module-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Secili modul</p>
+                <h2 id="moduleTitle">Genel Bakis</h2>
+              </div>
+            </div>
+            <p id="moduleText">
+              ERPilot AI, finans, muhasebe, stok, satis ve cari hesap verilerini tek bir is panelinde yorumlar.
+            </p>
+            <div class="mini-metrics" id="moduleMetrics"></div>
+          </article>
+        </section>
+      </section>
+
+      <aside class="assistant-panel" aria-label="AI asistan">
+        <div class="assistant-header">
+          <div>
+            <p class="eyebrow">ERP asistan</p>
+            <h2>AI Copilot</h2>
+          </div>
+          <span class="live-dot"></span>
+        </div>
+
+        <div class="quick-prompts">
+          <button data-prompt="Bu ay finansal durumum nasil?">Finansal durum</button>
+          <button data-prompt="Hangi musteriler riskli?">Riskli musteriler</button>
+          <button data-prompt="Stokta kritik seviyeye dusen urun var mi?">Stok uyarisi</button>
+          <button data-prompt="Bana yonetici raporu hazirla.">Yonetici raporu</button>
+        </div>
+
+        <div class="chat-window" id="chatWindow" aria-live="polite">
+          <div class="message assistant">
+            Merhaba, ERP verilerini senin icin okuyabilirim. Finans, muhasebe, stok, satis veya cari hesaplarla ilgili bir soru yaz.
+          </div>
+        </div>
+
+        <form class="chat-form" id="chatForm">
+          <input
+            id="chatInput"
+            type="text"
+            placeholder="Orn: Bu ay en buyuk gider kalemi ne?"
+            autocomplete="off"
+          />
+          <button type="submit">Gonder</button>
+        </form>
+      </aside>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
