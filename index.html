@@ -1,207 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ERPilot AI | Akilli ERP Asistani</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="app-shell">
-      <aside class="sidebar" aria-label="ERP modulleri">
-        <div class="brand">
-          <div class="brand-mark">E</div>
-          <div>
-            <strong>ERPilot AI</strong>
-            <span>Kurumsal zeka asistani</span>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ERPilot AI - Finans Asistani</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">EP</div>
+      <div>
+        <h1>ERPilot AI</h1>
+        <p>AI entegre kurumsal finans asistani</p>
+      </div>
+    </div>
+    <div class="status" id="statusBar">
+      <span class="badge" id="sourceBadge">veri: -</span>
+      <span class="badge" id="geminiBadge">AI: -</span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="dashboard">
+      <div class="kpi-row" id="kpiRow">
+        <div class="kpi-card"><span>Toplam Gelir</span><strong id="kpiGelir">-</strong></div>
+        <div class="kpi-card"><span>Toplam Gider</span><strong id="kpiGider">-</strong></div>
+        <div class="kpi-card"><span>Net Kar</span><strong id="kpiNet">-</strong></div>
+        <div class="kpi-card"><span>Kar Marji</span><strong id="kpiMarj">-</strong></div>
+      </div>
+
+      <div class="chart-card">
+        <div class="card-head">
+          <h2>Gelir / Gider Trendi</h2>
+          <span class="card-period" id="periodTrend">-</span>
         </div>
+        <div class="chart-box"><canvas id="trendChart"></canvas></div>
+        <div class="insight" id="insightTrend">Analiz yukleniyor...</div>
+      </div>
 
-        <nav class="module-nav">
-          <button class="module-item active" data-module="dashboard">
-            <span class="icon">⌂</span>
-            Genel Bakis
-          </button>
-          <button class="module-item" data-module="finance">
-            <span class="icon">₺</span>
-            Finans
-          </button>
-          <button class="module-item" data-module="accounting">
-            <span class="icon">≡</span>
-            Muhasebe
-          </button>
-          <button class="module-item" data-module="stock">
-            <span class="icon">□</span>
-            Stok
-          </button>
-          <button class="module-item" data-module="sales">
-            <span class="icon">↗</span>
-            Satis
-          </button>
-          <button class="module-item" data-module="customers">
-            <span class="icon">◎</span>
-            Cari Hesaplar
-          </button>
-        </nav>
-
-        <div class="sidebar-note">
-          <span>Canli demo akisi</span>
-          <strong>Asistana doğal dille sor, ERP verisi rapora donussun.</strong>
+      <div class="chart-card">
+        <div class="card-head">
+          <h2>Butce vs Gerceklesen (Departman)</h2>
+          <span class="card-period" id="periodBudget">-</span>
         </div>
-      </aside>
+        <div class="chart-box"><canvas id="budgetChart"></canvas></div>
+        <div class="insight" id="insightBudget">Analiz yukleniyor...</div>
+      </div>
 
-      <section class="workspace">
-        <header class="topbar">
-          <div>
-            <p class="eyebrow">Mayis 2026 operasyon ozeti</p>
-            <h1>Yonetici Paneli</h1>
-          </div>
-          <div class="topbar-actions">
-            <button class="ghost-button" id="monthlySummaryBtn">Yonetici ozeti</button>
-            <button class="primary-button" id="riskReportBtn">Riskleri goster</button>
-          </div>
-        </header>
-
-        <section class="kpi-grid" aria-label="Ana metrikler">
-          <article class="kpi-card">
-            <span>Gelir</span>
-            <strong>₺1.284.000</strong>
-            <small class="good">+18% gecen aya gore</small>
-          </article>
-          <article class="kpi-card">
-            <span>Gider</span>
-            <strong>₺842.000</strong>
-            <small class="warn">Pazarlama +24%</small>
-          </article>
-          <article class="kpi-card">
-            <span>Net Kar</span>
-            <strong>₺442.000</strong>
-            <small class="good">Kar marji %34,4</small>
-          </article>
-          <article class="kpi-card urgent">
-            <span>Tahsilat Riski</span>
-            <strong>₺186.500</strong>
-            <small>3 geciken musteri</small>
-          </article>
-        </section>
-
-        <section class="content-grid">
-          <article class="panel revenue-panel">
-            <div class="panel-header">
-              <div>
-                <p class="eyebrow">Akilli raporlama</p>
-                <h2>Gelir ve gider trendi</h2>
-              </div>
-              <span class="status-pill">AI yorum hazir</span>
-            </div>
-            <div class="chart" aria-label="Gelir gider grafigi">
-              <div class="bar-group">
-                <span class="bar revenue" style="height: 58%"></span>
-                <span class="bar expense" style="height: 42%"></span>
-                <small>Oca</small>
-              </div>
-              <div class="bar-group">
-                <span class="bar revenue" style="height: 62%"></span>
-                <span class="bar expense" style="height: 47%"></span>
-                <small>Sub</small>
-              </div>
-              <div class="bar-group">
-                <span class="bar revenue" style="height: 68%"></span>
-                <span class="bar expense" style="height: 50%"></span>
-                <small>Mar</small>
-              </div>
-              <div class="bar-group">
-                <span class="bar revenue" style="height: 72%"></span>
-                <span class="bar expense" style="height: 57%"></span>
-                <small>Nis</small>
-              </div>
-              <div class="bar-group">
-                <span class="bar revenue" style="height: 86%"></span>
-                <span class="bar expense" style="height: 61%"></span>
-                <small>May</small>
-              </div>
-            </div>
-          </article>
-
-          <article class="panel">
-            <div class="panel-header">
-              <div>
-                <p class="eyebrow">Oncelikli uyarilar</p>
-                <h2>Bugun ilgilenilecekler</h2>
-              </div>
-            </div>
-            <div class="alert-list" id="alertList"></div>
-          </article>
-
-          <article class="panel table-panel">
-            <div class="panel-header">
-              <div>
-                <p class="eyebrow">Cari hesaplar</p>
-                <h2>Riskli tahsilatlar</h2>
-              </div>
-            </div>
-            <table>
-              <thead>
-                <tr>
-                  <th>Musteri</th>
-                  <th>Tutar</th>
-                  <th>Gecikme</th>
-                  <th>Durum</th>
-                </tr>
-              </thead>
-              <tbody id="riskTable"></tbody>
-            </table>
-          </article>
-
-          <article class="panel module-panel">
-            <div class="panel-header">
-              <div>
-                <p class="eyebrow">Secili modul</p>
-                <h2 id="moduleTitle">Genel Bakis</h2>
-              </div>
-            </div>
-            <p id="moduleText">
-              ERPilot AI, finans, muhasebe, stok, satis ve cari hesap verilerini tek bir is panelinde yorumlar.
-            </p>
-            <div class="mini-metrics" id="moduleMetrics"></div>
-          </article>
-        </section>
-      </section>
-
-      <aside class="assistant-panel" aria-label="AI asistan">
-        <div class="assistant-header">
-          <div>
-            <p class="eyebrow">ERP asistan</p>
-            <h2>AI Copilot</h2>
-          </div>
-          <span class="live-dot"></span>
+      <div class="chart-card">
+        <div class="card-head">
+          <h2>Gider Kategori Dagilimi</h2>
+          <span class="card-period" id="periodCategory">-</span>
         </div>
+        <div class="chart-box"><canvas id="categoryChart"></canvas></div>
+        <div class="insight" id="insightCategory">Analiz yukleniyor...</div>
+      </div>
 
-        <div class="quick-prompts">
-          <button data-prompt="Bu ay finansal durumum nasil?">Finansal durum</button>
-          <button data-prompt="Hangi musteriler riskli?">Riskli musteriler</button>
-          <button data-prompt="Stokta kritik seviyeye dusen urun var mi?">Stok uyarisi</button>
-          <button data-prompt="Bana yonetici raporu hazirla.">Yonetici raporu</button>
+      <div class="chart-card anomaly-card">
+        <div class="card-head">
+          <h2>Anomali Tespiti</h2>
+          <span class="card-period" id="periodAnomaly">-</span>
         </div>
-
-        <div class="chat-window" id="chatWindow" aria-live="polite">
-          <div class="message assistant">
-            Merhaba, ERP verilerini senin icin okuyabilirim. Finans, muhasebe, stok, satis veya cari hesaplarla ilgili bir soru yaz.
-          </div>
+        <div class="insight warn" id="insightAnomaly">Analiz yukleniyor...</div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Tarih</th><th>Departman</th><th>Kategori</th><th>Tutar</th><th>Sapma</th></tr>
+            </thead>
+            <tbody id="anomalyTable"></tbody>
+          </table>
         </div>
+      </div>
+    </section>
 
-        <form class="chat-form" id="chatForm">
-          <input
-            id="chatInput"
-            type="text"
-            placeholder="Orn: Bu ay en buyuk gider kalemi ne?"
-            autocomplete="off"
-          />
-          <button type="submit">Gonder</button>
-        </form>
-      </aside>
-    </main>
+    <aside class="chat-panel">
+      <div class="chat-head">
+        <h2>Veriye Sor</h2>
+        <p>Dogal dilde soru sor; AI gercek veriyi sorgular.</p>
+      </div>
+      <div class="chat-window" id="chatWindow"></div>
+      <div class="quick-prompts">
+        <button data-prompt="Ocak ayinda en fazla harcama hangi departmanda?">Ocak'ta en cok harcayan departman</button>
+        <button data-prompt="Toplam gelir ne kadar?">Toplam gelir</button>
+        <button data-prompt="En buyuk gider kategorisi nedir?">En buyuk gider kalemi</button>
+      </div>
+      <form class="chat-form" id="chatForm">
+        <input id="chatInput" type="text" placeholder="Verilere bir soru sorun..." autocomplete="off" />
+        <button type="submit">Sor</button>
+      </form>
+    </aside>
+  </main>
 
-    <script src="app.js"></script>
-  </body>
+  <script src="app.js"></script>
+</body>
 </html>

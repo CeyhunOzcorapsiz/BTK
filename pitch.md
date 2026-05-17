@@ -36,19 +36,23 @@ ERPilot AI, ERP icine gomulu bir yapay zeka asistani olarak calisir. Kullanici d
 ## Teknik Mimari
 
 Frontend:
-HTML, CSS, JavaScript
+HTML, CSS, JavaScript, Chart.js
 
 Backend:
-Node.js HTTP server
+FastAPI (Python), pandas ile veri analizi
 
 AI Katmani:
-Gemini API ile dogal dil yorumlama. API key backend tarafinda tutulur; frontend yalnizca `/api/chat` endpointine soru gonderir.
+Gemini API function calling. AI ham SQL/kod uretmez; yalnizca allowlist
+dogrulamali yapisal sorgu uretir, backend veriyi pandas ile gercekten sorgular.
+API key backend tarafinda tutulur.
 
 Veri Katmani:
-Demo ERP veri objeleri
+DataSource soyutlamasi - MVP'de CSV demo veri seti.
 
-ERP Entegrasyonu:
-Gercek senaryoda SQL, REST API veya ERP servis katmani uzerinden finans, muhasebe, stok ve cari hesap verileri okunur.
+ERP / SAP Entegrasyonu:
+Gercek senaryoda SAP S/4HANA verisi OData REST servisleri uzerinden okunur.
+Veri kaynagi soyutlandigi icin analiz ve panel katmani degismez.
+Detay: `docs/MIMARI.md`.
 
 ## Demo Kapanis Cumlesi
 

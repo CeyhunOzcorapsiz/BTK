@@ -1,0 +1,684 @@
+tarih,yil,ay,ay_no,departman,kategori,tur,tutar,aciklama
+2025-01-04,2025,Ocak,1,Pazarlama,Reklam,gider,58590,Reklam - Pazarlama
+2025-01-22,2025,Ocak,1,Pazarlama,Reklam,gider,33380,Reklam - Pazarlama
+2025-01-17,2025,Ocak,1,Pazarlama,Danismanlik,gider,18760,Danismanlik - Pazarlama
+2025-01-20,2025,Ocak,1,Pazarlama,Danismanlik,gider,1330,Danismanlik - Pazarlama
+2025-01-01,2025,Ocak,1,Pazarlama,Danismanlik,gider,9720,Danismanlik - Pazarlama
+2025-01-26,2025,Ocak,1,Pazarlama,Seyahat,gider,5930,Seyahat - Pazarlama
+2025-01-28,2025,Ocak,1,Pazarlama,Seyahat,gider,2400,Seyahat - Pazarlama
+2025-01-01,2025,Ocak,1,Pazarlama,Seyahat,gider,6410,Seyahat - Pazarlama
+2025-01-25,2025,Ocak,1,Pazarlama,Yazilim Lisans,gider,7080,Yazilim Lisans - Pazarlama
+2025-01-11,2025,Ocak,1,Pazarlama,Yazilim Lisans,gider,3230,Yazilim Lisans - Pazarlama
+2025-01-26,2025,Ocak,1,Satis,Personel,gider,108700,Personel - Satis
+2025-01-02,2025,Ocak,1,Satis,Personel,gider,77430,Personel - Satis
+2025-01-21,2025,Ocak,1,Satis,Seyahat,gider,8100,Seyahat - Satis
+2025-01-20,2025,Ocak,1,Satis,Seyahat,gider,30140,Seyahat - Satis
+2025-01-02,2025,Ocak,1,Satis,Yazilim Lisans,gider,14200,Yazilim Lisans - Satis
+2025-01-28,2025,Ocak,1,Bilgi Teknolojileri,Yazilim Lisans,gider,66450,Yazilim Lisans - Bilgi Teknolojileri
+2025-01-22,2025,Ocak,1,Bilgi Teknolojileri,Donanim,gider,18230,Donanim - Bilgi Teknolojileri
+2025-01-09,2025,Ocak,1,Bilgi Teknolojileri,Donanim,gider,3550,Donanim - Bilgi Teknolojileri
+2025-01-23,2025,Ocak,1,Bilgi Teknolojileri,Donanim,gider,7760,Donanim - Bilgi Teknolojileri
+2025-01-15,2025,Ocak,1,Bilgi Teknolojileri,Personel,gider,92600,Personel - Bilgi Teknolojileri
+2025-01-13,2025,Ocak,1,Bilgi Teknolojileri,Personel,gider,77900,Personel - Bilgi Teknolojileri
+2025-01-09,2025,Ocak,1,Bilgi Teknolojileri,Personel,gider,35700,Personel - Bilgi Teknolojileri
+2025-01-02,2025,Ocak,1,Bilgi Teknolojileri,Bakim Onarim,gider,2990,Bakim Onarim - Bilgi Teknolojileri
+2025-01-08,2025,Ocak,1,Bilgi Teknolojileri,Bakim Onarim,gider,4420,Bakim Onarim - Bilgi Teknolojileri
+2025-01-27,2025,Ocak,1,Bilgi Teknolojileri,Bakim Onarim,gider,10470,Bakim Onarim - Bilgi Teknolojileri
+2025-01-19,2025,Ocak,1,Insan Kaynaklari,Personel,gider,6170,Personel - Insan Kaynaklari
+2025-01-23,2025,Ocak,1,Insan Kaynaklari,Personel,gider,85110,Personel - Insan Kaynaklari
+2025-01-05,2025,Ocak,1,Insan Kaynaklari,Egitim,gider,9440,Egitim - Insan Kaynaklari
+2025-01-09,2025,Ocak,1,Insan Kaynaklari,Egitim,gider,6860,Egitim - Insan Kaynaklari
+2025-01-13,2025,Ocak,1,Insan Kaynaklari,Danismanlik,gider,1460,Danismanlik - Insan Kaynaklari
+2025-01-12,2025,Ocak,1,Insan Kaynaklari,Danismanlik,gider,3240,Danismanlik - Insan Kaynaklari
+2025-01-08,2025,Ocak,1,Insan Kaynaklari,Danismanlik,gider,4980,Danismanlik - Insan Kaynaklari
+2025-01-04,2025,Ocak,1,Uretim,Personel,gider,276420,Personel - Uretim
+2025-01-05,2025,Ocak,1,Uretim,Personel,gider,143260,Personel - Uretim
+2025-01-20,2025,Ocak,1,Uretim,Bakim Onarim,gider,35400,Bakim Onarim - Uretim
+2025-01-15,2025,Ocak,1,Uretim,Bakim Onarim,gider,22840,Bakim Onarim - Uretim
+2025-01-04,2025,Ocak,1,Uretim,Donanim,gider,41160,Donanim - Uretim
+2025-01-10,2025,Ocak,1,Finans,Personel,gider,95150,Personel - Finans
+2025-01-14,2025,Ocak,1,Finans,Personel,gider,42110,Personel - Finans
+2025-01-06,2025,Ocak,1,Finans,Danismanlik,gider,10120,Danismanlik - Finans
+2025-01-17,2025,Ocak,1,Finans,Danismanlik,gider,3040,Danismanlik - Finans
+2025-01-04,2025,Ocak,1,Finans,Danismanlik,gider,5790,Danismanlik - Finans
+2025-01-06,2025,Ocak,1,Finans,Yazilim Lisans,gider,9610,Yazilim Lisans - Finans
+2025-01-18,2025,Ocak,1,Finans,Yazilim Lisans,gider,3760,Yazilim Lisans - Finans
+2025-01-25,2025,Ocak,1,Finans,Yazilim Lisans,gider,7080,Yazilim Lisans - Finans
+2025-01-27,2025,Ocak,1,Ar-Ge,Personel,gider,69730,Personel - Ar-Ge
+2025-01-26,2025,Ocak,1,Ar-Ge,Personel,gider,4190,Personel - Ar-Ge
+2025-01-10,2025,Ocak,1,Ar-Ge,Personel,gider,199870,Personel - Ar-Ge
+2025-01-03,2025,Ocak,1,Ar-Ge,Donanim,gider,27670,Donanim - Ar-Ge
+2025-01-25,2025,Ocak,1,Ar-Ge,Donanim,gider,2500,Donanim - Ar-Ge
+2025-01-18,2025,Ocak,1,Ar-Ge,Donanim,gider,14200,Donanim - Ar-Ge
+2025-01-17,2025,Ocak,1,Ar-Ge,Yazilim Lisans,gider,25810,Yazilim Lisans - Ar-Ge
+2025-01-28,2025,Ocak,1,Ar-Ge,Yazilim Lisans,gider,4500,Yazilim Lisans - Ar-Ge
+2025-01-13,2025,Ocak,1,Lojistik,Lojistik Nakliye,gider,39360,Lojistik Nakliye - Lojistik
+2025-01-22,2025,Ocak,1,Lojistik,Lojistik Nakliye,gider,35950,Lojistik Nakliye - Lojistik
+2025-01-21,2025,Ocak,1,Lojistik,Lojistik Nakliye,gider,37150,Lojistik Nakliye - Lojistik
+2025-01-11,2025,Ocak,1,Lojistik,Personel,gider,33230,Personel - Lojistik
+2025-01-01,2025,Ocak,1,Lojistik,Personel,gider,61710,Personel - Lojistik
+2025-01-23,2025,Ocak,1,Lojistik,Bakim Onarim,gider,18820,Bakim Onarim - Lojistik
+2025-01-08,2025,Ocak,1,Satis,Urun Satisi,gelir,1984000,Urun Satisi geliri
+2025-01-02,2025,Ocak,1,Satis,Hizmet Geliri,gelir,532100,Hizmet Geliri geliri
+2025-01-03,2025,Ocak,1,Satis,Bayi Geliri,gelir,450300,Bayi Geliri geliri
+2025-02-19,2025,Subat,2,Pazarlama,Reklam,gider,53620,Reklam - Pazarlama
+2025-02-19,2025,Subat,2,Pazarlama,Reklam,gider,33120,Reklam - Pazarlama
+2025-02-14,2025,Subat,2,Pazarlama,Danismanlik,gider,16400,Danismanlik - Pazarlama
+2025-02-12,2025,Subat,2,Pazarlama,Danismanlik,gider,8350,Danismanlik - Pazarlama
+2025-02-02,2025,Subat,2,Pazarlama,Seyahat,gider,530,Seyahat - Pazarlama
+2025-02-13,2025,Subat,2,Pazarlama,Seyahat,gider,6390,Seyahat - Pazarlama
+2025-02-24,2025,Subat,2,Pazarlama,Seyahat,gider,6320,Seyahat - Pazarlama
+2025-02-18,2025,Subat,2,Pazarlama,Yazilim Lisans,gider,7460,Yazilim Lisans - Pazarlama
+2025-02-03,2025,Subat,2,Satis,Personel,gider,72450,Personel - Satis
+2025-02-15,2025,Subat,2,Satis,Personel,gider,136950,Personel - Satis
+2025-02-18,2025,Subat,2,Satis,Seyahat,gider,40680,Seyahat - Satis
+2025-02-16,2025,Subat,2,Satis,Yazilim Lisans,gider,14020,Yazilim Lisans - Satis
+2025-02-01,2025,Subat,2,Bilgi Teknolojileri,Yazilim Lisans,gider,59970,Yazilim Lisans - Bilgi Teknolojileri
+2025-02-24,2025,Subat,2,Bilgi Teknolojileri,Donanim,gider,20390,Donanim - Bilgi Teknolojileri
+2025-02-26,2025,Subat,2,Bilgi Teknolojileri,Donanim,gider,49780,Donanim - Bilgi Teknolojileri
+2025-02-07,2025,Subat,2,Bilgi Teknolojileri,Personel,gider,185550,Personel - Bilgi Teknolojileri
+2025-02-16,2025,Subat,2,Bilgi Teknolojileri,Bakim Onarim,gider,2560,Bakim Onarim - Bilgi Teknolojileri
+2025-02-17,2025,Subat,2,Bilgi Teknolojileri,Bakim Onarim,gider,13170,Bakim Onarim - Bilgi Teknolojileri
+2025-02-28,2025,Subat,2,Bilgi Teknolojileri,Bakim Onarim,gider,2110,Bakim Onarim - Bilgi Teknolojileri
+2025-02-22,2025,Subat,2,Insan Kaynaklari,Personel,gider,10480,Personel - Insan Kaynaklari
+2025-02-28,2025,Subat,2,Insan Kaynaklari,Personel,gider,24300,Personel - Insan Kaynaklari
+2025-02-08,2025,Subat,2,Insan Kaynaklari,Personel,gider,77810,Personel - Insan Kaynaklari
+2025-02-14,2025,Subat,2,Insan Kaynaklari,Egitim,gider,3080,Egitim - Insan Kaynaklari
+2025-02-22,2025,Subat,2,Insan Kaynaklari,Egitim,gider,7450,Egitim - Insan Kaynaklari
+2025-02-19,2025,Subat,2,Insan Kaynaklari,Egitim,gider,7760,Egitim - Insan Kaynaklari
+2025-02-08,2025,Subat,2,Insan Kaynaklari,Danismanlik,gider,3320,Danismanlik - Insan Kaynaklari
+2025-02-09,2025,Subat,2,Insan Kaynaklari,Danismanlik,gider,11640,Danismanlik - Insan Kaynaklari
+2025-02-03,2025,Subat,2,Uretim,Personel,gider,115990,Personel - Uretim
+2025-02-01,2025,Subat,2,Uretim,Personel,gider,235670,Personel - Uretim
+2025-02-07,2025,Subat,2,Uretim,Bakim Onarim,gider,51230,Bakim Onarim - Uretim
+2025-02-12,2025,Subat,2,Uretim,Donanim,gider,20380,Donanim - Uretim
+2025-02-10,2025,Subat,2,Uretim,Donanim,gider,20340,Donanim - Uretim
+2025-02-17,2025,Subat,2,Finans,Personel,gider,17010,Personel - Finans
+2025-02-01,2025,Subat,2,Finans,Personel,gider,55320,Personel - Finans
+2025-02-22,2025,Subat,2,Finans,Personel,gider,45380,Personel - Finans
+2025-02-04,2025,Subat,2,Finans,Danismanlik,gider,2980,Danismanlik - Finans
+2025-02-24,2025,Subat,2,Finans,Danismanlik,gider,25260,Danismanlik - Finans
+2025-02-18,2025,Subat,2,Finans,Danismanlik,gider,7610,Danismanlik - Finans
+2025-02-07,2025,Subat,2,Finans,Yazilim Lisans,gider,12010,Yazilim Lisans - Finans
+2025-02-03,2025,Subat,2,Ar-Ge,Personel,gider,56280,Personel - Ar-Ge
+2025-02-21,2025,Subat,2,Ar-Ge,Personel,gider,104300,Personel - Ar-Ge
+2025-02-14,2025,Subat,2,Ar-Ge,Personel,gider,97480,Personel - Ar-Ge
+2025-02-09,2025,Subat,2,Ar-Ge,Donanim,gider,44200,Donanim - Ar-Ge
+2025-02-06,2025,Subat,2,Ar-Ge,Donanim,gider,36520,Donanim - Ar-Ge
+2025-02-23,2025,Subat,2,Ar-Ge,Yazilim Lisans,gider,25160,Yazilim Lisans - Ar-Ge
+2025-02-05,2025,Subat,2,Ar-Ge,Yazilim Lisans,gider,5020,Yazilim Lisans - Ar-Ge
+2025-02-12,2025,Subat,2,Lojistik,Lojistik Nakliye,gider,59070,Lojistik Nakliye - Lojistik
+2025-02-26,2025,Subat,2,Lojistik,Lojistik Nakliye,gider,45950,Lojistik Nakliye - Lojistik
+2025-02-28,2025,Subat,2,Lojistik,Lojistik Nakliye,gider,4470,Lojistik Nakliye - Lojistik
+2025-02-28,2025,Subat,2,Lojistik,Personel,gider,18200,Personel - Lojistik
+2025-02-14,2025,Subat,2,Lojistik,Personel,gider,7500,Personel - Lojistik
+2025-02-20,2025,Subat,2,Lojistik,Personel,gider,56880,Personel - Lojistik
+2025-02-26,2025,Subat,2,Lojistik,Bakim Onarim,gider,21500,Bakim Onarim - Lojistik
+2025-02-14,2025,Subat,2,Satis,Urun Satisi,gelir,2089600,Urun Satisi geliri
+2025-02-24,2025,Subat,2,Satis,Hizmet Geliri,gelir,530800,Hizmet Geliri geliri
+2025-02-26,2025,Subat,2,Satis,Bayi Geliri,gelir,464900,Bayi Geliri geliri
+2025-03-04,2025,Mart,3,Pazarlama,Reklam,gider,47430,Reklam - Pazarlama
+2025-03-13,2025,Mart,3,Pazarlama,Reklam,gider,15610,Reklam - Pazarlama
+2025-03-28,2025,Mart,3,Pazarlama,Reklam,gider,46060,Reklam - Pazarlama
+2025-03-15,2025,Mart,3,Pazarlama,Danismanlik,gider,16150,Danismanlik - Pazarlama
+2025-03-22,2025,Mart,3,Pazarlama,Seyahat,gider,12490,Seyahat - Pazarlama
+2025-03-09,2025,Mart,3,Pazarlama,Yazilim Lisans,gider,6500,Yazilim Lisans - Pazarlama
+2025-03-04,2025,Mart,3,Satis,Personel,gider,82230,Personel - Satis
+2025-03-09,2025,Mart,3,Satis,Personel,gider,44940,Personel - Satis
+2025-03-06,2025,Mart,3,Satis,Personel,gider,78720,Personel - Satis
+2025-03-14,2025,Mart,3,Satis,Seyahat,gider,35340,Seyahat - Satis
+2025-03-13,2025,Mart,3,Satis,Yazilim Lisans,gider,5790,Yazilim Lisans - Satis
+2025-03-19,2025,Mart,3,Satis,Yazilim Lisans,gider,4880,Yazilim Lisans - Satis
+2025-03-18,2025,Mart,3,Bilgi Teknolojileri,Yazilim Lisans,gider,90,Yazilim Lisans - Bilgi Teknolojileri
+2025-03-22,2025,Mart,3,Bilgi Teknolojileri,Yazilim Lisans,gider,48660,Yazilim Lisans - Bilgi Teknolojileri
+2025-03-11,2025,Mart,3,Bilgi Teknolojileri,Donanim,gider,7340,Donanim - Bilgi Teknolojileri
+2025-03-20,2025,Mart,3,Bilgi Teknolojileri,Donanim,gider,16070,Donanim - Bilgi Teknolojileri
+2025-03-11,2025,Mart,3,Bilgi Teknolojileri,Donanim,gider,35350,Donanim - Bilgi Teknolojileri
+2025-03-11,2025,Mart,3,Bilgi Teknolojileri,Personel,gider,83950,Personel - Bilgi Teknolojileri
+2025-03-13,2025,Mart,3,Bilgi Teknolojileri,Personel,gider,110400,Personel - Bilgi Teknolojileri
+2025-03-13,2025,Mart,3,Bilgi Teknolojileri,Bakim Onarim,gider,14710,Bakim Onarim - Bilgi Teknolojileri
+2025-03-10,2025,Mart,3,Insan Kaynaklari,Personel,gider,37720,Personel - Insan Kaynaklari
+2025-03-10,2025,Mart,3,Insan Kaynaklari,Personel,gider,26920,Personel - Insan Kaynaklari
+2025-03-07,2025,Mart,3,Insan Kaynaklari,Personel,gider,55260,Personel - Insan Kaynaklari
+2025-03-17,2025,Mart,3,Insan Kaynaklari,Egitim,gider,4260,Egitim - Insan Kaynaklari
+2025-03-16,2025,Mart,3,Insan Kaynaklari,Egitim,gider,5840,Egitim - Insan Kaynaklari
+2025-03-26,2025,Mart,3,Insan Kaynaklari,Egitim,gider,8940,Egitim - Insan Kaynaklari
+2025-03-10,2025,Mart,3,Insan Kaynaklari,Danismanlik,gider,19270,Danismanlik - Insan Kaynaklari
+2025-03-08,2025,Mart,3,Uretim,Personel,gider,33100,Personel - Uretim
+2025-03-22,2025,Mart,3,Uretim,Personel,gider,337440,Personel - Uretim
+2025-03-08,2025,Mart,3,Uretim,Bakim Onarim,gider,135070,Bakim Onarim - Uretim (buyuk kalem)
+2025-03-21,2025,Mart,3,Uretim,Donanim,gider,60780,Donanim - Uretim
+2025-03-21,2025,Mart,3,Finans,Personel,gider,91210,Personel - Finans
+2025-03-23,2025,Mart,3,Finans,Personel,gider,45010,Personel - Finans
+2025-03-08,2025,Mart,3,Finans,Danismanlik,gider,15500,Danismanlik - Finans
+2025-03-04,2025,Mart,3,Finans,Yazilim Lisans,gider,2970,Yazilim Lisans - Finans
+2025-03-15,2025,Mart,3,Finans,Yazilim Lisans,gider,3560,Yazilim Lisans - Finans
+2025-03-05,2025,Mart,3,Finans,Yazilim Lisans,gider,5870,Yazilim Lisans - Finans
+2025-03-20,2025,Mart,3,Ar-Ge,Personel,gider,66080,Personel - Ar-Ge
+2025-03-27,2025,Mart,3,Ar-Ge,Personel,gider,105440,Personel - Ar-Ge
+2025-03-24,2025,Mart,3,Ar-Ge,Personel,gider,98930,Personel - Ar-Ge
+2025-03-15,2025,Mart,3,Ar-Ge,Donanim,gider,26000,Donanim - Ar-Ge
+2025-03-09,2025,Mart,3,Ar-Ge,Donanim,gider,9280,Donanim - Ar-Ge
+2025-03-25,2025,Mart,3,Ar-Ge,Donanim,gider,50240,Donanim - Ar-Ge
+2025-03-23,2025,Mart,3,Ar-Ge,Yazilim Lisans,gider,8500,Yazilim Lisans - Ar-Ge
+2025-03-10,2025,Mart,3,Ar-Ge,Yazilim Lisans,gider,4200,Yazilim Lisans - Ar-Ge
+2025-03-08,2025,Mart,3,Ar-Ge,Yazilim Lisans,gider,7720,Yazilim Lisans - Ar-Ge
+2025-03-05,2025,Mart,3,Lojistik,Lojistik Nakliye,gider,11950,Lojistik Nakliye - Lojistik
+2025-03-23,2025,Mart,3,Lojistik,Lojistik Nakliye,gider,22380,Lojistik Nakliye - Lojistik
+2025-03-07,2025,Mart,3,Lojistik,Lojistik Nakliye,gider,56830,Lojistik Nakliye - Lojistik
+2025-03-13,2025,Mart,3,Lojistik,Personel,gider,28940,Personel - Lojistik
+2025-03-25,2025,Mart,3,Lojistik,Personel,gider,3870,Personel - Lojistik
+2025-03-19,2025,Mart,3,Lojistik,Personel,gider,51740,Personel - Lojistik
+2025-03-25,2025,Mart,3,Lojistik,Bakim Onarim,gider,12770,Bakim Onarim - Lojistik
+2025-03-13,2025,Mart,3,Lojistik,Bakim Onarim,gider,200,Bakim Onarim - Lojistik
+2025-03-28,2025,Mart,3,Lojistik,Bakim Onarim,gider,11810,Bakim Onarim - Lojistik
+2025-03-27,2025,Mart,3,Satis,Urun Satisi,gelir,2151700,Urun Satisi geliri
+2025-03-24,2025,Mart,3,Satis,Hizmet Geliri,gelir,609700,Hizmet Geliri geliri
+2025-03-26,2025,Mart,3,Satis,Bayi Geliri,gelir,443200,Bayi Geliri geliri
+2025-04-16,2025,Nisan,4,Pazarlama,Reklam,gider,93410,Reklam - Pazarlama
+2025-04-05,2025,Nisan,4,Pazarlama,Danismanlik,gider,5450,Danismanlik - Pazarlama
+2025-04-20,2025,Nisan,4,Pazarlama,Danismanlik,gider,4950,Danismanlik - Pazarlama
+2025-04-18,2025,Nisan,4,Pazarlama,Danismanlik,gider,5740,Danismanlik - Pazarlama
+2025-04-28,2025,Nisan,4,Pazarlama,Seyahat,gider,4860,Seyahat - Pazarlama
+2025-04-15,2025,Nisan,4,Pazarlama,Seyahat,gider,620,Seyahat - Pazarlama
+2025-04-06,2025,Nisan,4,Pazarlama,Seyahat,gider,3140,Seyahat - Pazarlama
+2025-04-11,2025,Nisan,4,Pazarlama,Yazilim Lisans,gider,5540,Yazilim Lisans - Pazarlama
+2025-04-01,2025,Nisan,4,Satis,Personel,gider,176490,Personel - Satis
+2025-04-24,2025,Nisan,4,Satis,Personel,gider,57300,Personel - Satis
+2025-04-21,2025,Nisan,4,Satis,Seyahat,gider,26560,Seyahat - Satis
+2025-04-02,2025,Nisan,4,Satis,Seyahat,gider,8130,Seyahat - Satis
+2025-04-20,2025,Nisan,4,Satis,Yazilim Lisans,gider,13760,Yazilim Lisans - Satis
+2025-04-09,2025,Nisan,4,Bilgi Teknolojileri,Yazilim Lisans,gider,3580,Yazilim Lisans - Bilgi Teknolojileri
+2025-04-25,2025,Nisan,4,Bilgi Teknolojileri,Yazilim Lisans,gider,29640,Yazilim Lisans - Bilgi Teknolojileri
+2025-04-12,2025,Nisan,4,Bilgi Teknolojileri,Yazilim Lisans,gider,14540,Yazilim Lisans - Bilgi Teknolojileri
+2025-04-10,2025,Nisan,4,Bilgi Teknolojileri,Donanim,gider,14590,Donanim - Bilgi Teknolojileri
+2025-04-04,2025,Nisan,4,Bilgi Teknolojileri,Donanim,gider,15800,Donanim - Bilgi Teknolojileri
+2025-04-19,2025,Nisan,4,Bilgi Teknolojileri,Donanim,gider,3330,Donanim - Bilgi Teknolojileri
+2025-04-07,2025,Nisan,4,Bilgi Teknolojileri,Personel,gider,64080,Personel - Bilgi Teknolojileri
+2025-04-03,2025,Nisan,4,Bilgi Teknolojileri,Personel,gider,26480,Personel - Bilgi Teknolojileri
+2025-04-19,2025,Nisan,4,Bilgi Teknolojileri,Personel,gider,66440,Personel - Bilgi Teknolojileri
+2025-04-10,2025,Nisan,4,Bilgi Teknolojileri,Bakim Onarim,gider,14800,Bakim Onarim - Bilgi Teknolojileri
+2025-04-19,2025,Nisan,4,Insan Kaynaklari,Personel,gider,128480,Personel - Insan Kaynaklari
+2025-04-21,2025,Nisan,4,Insan Kaynaklari,Egitim,gider,24070,Egitim - Insan Kaynaklari
+2025-04-11,2025,Nisan,4,Insan Kaynaklari,Egitim,gider,2510,Egitim - Insan Kaynaklari
+2025-04-21,2025,Nisan,4,Insan Kaynaklari,Danismanlik,gider,840,Danismanlik - Insan Kaynaklari
+2025-04-27,2025,Nisan,4,Insan Kaynaklari,Danismanlik,gider,7610,Danismanlik - Insan Kaynaklari
+2025-04-21,2025,Nisan,4,Uretim,Personel,gider,367950,Personel - Uretim
+2025-04-19,2025,Nisan,4,Uretim,Bakim Onarim,gider,16380,Bakim Onarim - Uretim
+2025-04-09,2025,Nisan,4,Uretim,Bakim Onarim,gider,9830,Bakim Onarim - Uretim
+2025-04-11,2025,Nisan,4,Uretim,Bakim Onarim,gider,17460,Bakim Onarim - Uretim
+2025-04-15,2025,Nisan,4,Uretim,Donanim,gider,56010,Donanim - Uretim
+2025-04-11,2025,Nisan,4,Finans,Personel,gider,55310,Personel - Finans
+2025-04-06,2025,Nisan,4,Finans,Personel,gider,27840,Personel - Finans
+2025-04-16,2025,Nisan,4,Finans,Personel,gider,40910,Personel - Finans
+2025-04-09,2025,Nisan,4,Finans,Danismanlik,gider,6720,Danismanlik - Finans
+2025-04-18,2025,Nisan,4,Finans,Danismanlik,gider,14320,Danismanlik - Finans
+2025-04-14,2025,Nisan,4,Finans,Yazilim Lisans,gider,10490,Yazilim Lisans - Finans
+2025-04-01,2025,Nisan,4,Ar-Ge,Personel,gider,72080,Personel - Ar-Ge
+2025-04-03,2025,Nisan,4,Ar-Ge,Personel,gider,107770,Personel - Ar-Ge
+2025-04-10,2025,Nisan,4,Ar-Ge,Personel,gider,67850,Personel - Ar-Ge
+2025-04-18,2025,Nisan,4,Ar-Ge,Donanim,gider,28830,Donanim - Ar-Ge
+2025-04-17,2025,Nisan,4,Ar-Ge,Donanim,gider,16020,Donanim - Ar-Ge
+2025-04-09,2025,Nisan,4,Ar-Ge,Yazilim Lisans,gider,5750,Yazilim Lisans - Ar-Ge
+2025-04-08,2025,Nisan,4,Ar-Ge,Yazilim Lisans,gider,12210,Yazilim Lisans - Ar-Ge
+2025-04-04,2025,Nisan,4,Ar-Ge,Yazilim Lisans,gider,4710,Yazilim Lisans - Ar-Ge
+2025-04-07,2025,Nisan,4,Lojistik,Lojistik Nakliye,gider,45100,Lojistik Nakliye - Lojistik
+2025-04-24,2025,Nisan,4,Lojistik,Lojistik Nakliye,gider,64150,Lojistik Nakliye - Lojistik
+2025-04-16,2025,Nisan,4,Lojistik,Lojistik Nakliye,gider,15580,Lojistik Nakliye - Lojistik
+2025-04-10,2025,Nisan,4,Lojistik,Personel,gider,23360,Personel - Lojistik
+2025-04-08,2025,Nisan,4,Lojistik,Personel,gider,38380,Personel - Lojistik
+2025-04-12,2025,Nisan,4,Lojistik,Personel,gider,32590,Personel - Lojistik
+2025-04-10,2025,Nisan,4,Lojistik,Bakim Onarim,gider,7340,Bakim Onarim - Lojistik
+2025-04-23,2025,Nisan,4,Lojistik,Bakim Onarim,gider,2640,Bakim Onarim - Lojistik
+2025-04-05,2025,Nisan,4,Lojistik,Bakim Onarim,gider,3160,Bakim Onarim - Lojistik
+2025-04-25,2025,Nisan,4,Satis,Urun Satisi,gelir,2058600,Urun Satisi geliri
+2025-04-28,2025,Nisan,4,Satis,Hizmet Geliri,gelir,630300,Hizmet Geliri geliri
+2025-04-10,2025,Nisan,4,Satis,Bayi Geliri,gelir,343700,Bayi Geliri geliri
+2025-05-09,2025,Mayis,5,Pazarlama,Reklam,gider,87480,Reklam - Pazarlama
+2025-05-03,2025,Mayis,5,Pazarlama,Danismanlik,gider,35440,Danismanlik - Pazarlama
+2025-05-19,2025,Mayis,5,Pazarlama,Seyahat,gider,15640,Seyahat - Pazarlama
+2025-05-25,2025,Mayis,5,Pazarlama,Yazilim Lisans,gider,12200,Yazilim Lisans - Pazarlama
+2025-05-15,2025,Mayis,5,Satis,Personel,gider,40440,Personel - Satis
+2025-05-10,2025,Mayis,5,Satis,Personel,gider,93640,Personel - Satis
+2025-05-28,2025,Mayis,5,Satis,Personel,gider,80730,Personel - Satis
+2025-05-25,2025,Mayis,5,Satis,Seyahat,gider,11460,Seyahat - Satis
+2025-05-07,2025,Mayis,5,Satis,Seyahat,gider,11250,Seyahat - Satis
+2025-05-21,2025,Mayis,5,Satis,Seyahat,gider,13660,Seyahat - Satis
+2025-05-18,2025,Mayis,5,Satis,Yazilim Lisans,gider,9930,Yazilim Lisans - Satis
+2025-05-02,2025,Mayis,5,Bilgi Teknolojileri,Yazilim Lisans,gider,26800,Yazilim Lisans - Bilgi Teknolojileri
+2025-05-08,2025,Mayis,5,Bilgi Teknolojileri,Yazilim Lisans,gider,18270,Yazilim Lisans - Bilgi Teknolojileri
+2025-05-09,2025,Mayis,5,Bilgi Teknolojileri,Donanim,gider,9300,Donanim - Bilgi Teknolojileri
+2025-05-26,2025,Mayis,5,Bilgi Teknolojileri,Donanim,gider,30490,Donanim - Bilgi Teknolojileri
+2025-05-18,2025,Mayis,5,Bilgi Teknolojileri,Personel,gider,206950,Personel - Bilgi Teknolojileri
+2025-05-06,2025,Mayis,5,Bilgi Teknolojileri,Bakim Onarim,gider,8390,Bakim Onarim - Bilgi Teknolojileri
+2025-05-26,2025,Mayis,5,Bilgi Teknolojileri,Bakim Onarim,gider,720,Bakim Onarim - Bilgi Teknolojileri
+2025-05-10,2025,Mayis,5,Insan Kaynaklari,Personel,gider,54000,Personel - Insan Kaynaklari
+2025-05-23,2025,Mayis,5,Insan Kaynaklari,Personel,gider,25740,Personel - Insan Kaynaklari
+2025-05-13,2025,Mayis,5,Insan Kaynaklari,Personel,gider,27470,Personel - Insan Kaynaklari
+2025-05-14,2025,Mayis,5,Insan Kaynaklari,Egitim,gider,12780,Egitim - Insan Kaynaklari
+2025-05-24,2025,Mayis,5,Insan Kaynaklari,Egitim,gider,17460,Egitim - Insan Kaynaklari
+2025-05-22,2025,Mayis,5,Insan Kaynaklari,Danismanlik,gider,12440,Danismanlik - Insan Kaynaklari
+2025-05-22,2025,Mayis,5,Uretim,Personel,gider,419530,Personel - Uretim
+2025-05-21,2025,Mayis,5,Uretim,Bakim Onarim,gider,70180,Bakim Onarim - Uretim
+2025-05-16,2025,Mayis,5,Uretim,Donanim,gider,7760,Donanim - Uretim
+2025-05-12,2025,Mayis,5,Uretim,Donanim,gider,14490,Donanim - Uretim
+2025-05-14,2025,Mayis,5,Uretim,Donanim,gider,17250,Donanim - Uretim
+2025-05-23,2025,Mayis,5,Finans,Personel,gider,129250,Personel - Finans
+2025-05-15,2025,Mayis,5,Finans,Danismanlik,gider,17120,Danismanlik - Finans
+2025-05-03,2025,Mayis,5,Finans,Danismanlik,gider,11580,Danismanlik - Finans
+2025-05-01,2025,Mayis,5,Finans,Yazilim Lisans,gider,7390,Yazilim Lisans - Finans
+2025-05-22,2025,Mayis,5,Finans,Yazilim Lisans,gider,7050,Yazilim Lisans - Finans
+2025-05-12,2025,Mayis,5,Ar-Ge,Personel,gider,282490,Personel - Ar-Ge
+2025-05-18,2025,Mayis,5,Ar-Ge,Donanim,gider,55680,Donanim - Ar-Ge
+2025-05-05,2025,Mayis,5,Ar-Ge,Donanim,gider,14910,Donanim - Ar-Ge
+2025-05-26,2025,Mayis,5,Ar-Ge,Yazilim Lisans,gider,14900,Yazilim Lisans - Ar-Ge
+2025-05-08,2025,Mayis,5,Ar-Ge,Yazilim Lisans,gider,890,Yazilim Lisans - Ar-Ge
+2025-05-23,2025,Mayis,5,Ar-Ge,Yazilim Lisans,gider,19370,Yazilim Lisans - Ar-Ge
+2025-05-04,2025,Mayis,5,Lojistik,Lojistik Nakliye,gider,23520,Lojistik Nakliye - Lojistik
+2025-05-15,2025,Mayis,5,Lojistik,Lojistik Nakliye,gider,12950,Lojistik Nakliye - Lojistik
+2025-05-04,2025,Mayis,5,Lojistik,Lojistik Nakliye,gider,48510,Lojistik Nakliye - Lojistik
+2025-05-16,2025,Mayis,5,Lojistik,Personel,gider,22930,Personel - Lojistik
+2025-05-16,2025,Mayis,5,Lojistik,Personel,gider,55420,Personel - Lojistik
+2025-05-08,2025,Mayis,5,Lojistik,Personel,gider,32640,Personel - Lojistik
+2025-05-17,2025,Mayis,5,Lojistik,Bakim Onarim,gider,17660,Bakim Onarim - Lojistik
+2025-05-05,2025,Mayis,5,Satis,Urun Satisi,gelir,2133600,Urun Satisi geliri
+2025-05-09,2025,Mayis,5,Satis,Hizmet Geliri,gelir,708000,Hizmet Geliri geliri
+2025-05-28,2025,Mayis,5,Satis,Bayi Geliri,gelir,459200,Bayi Geliri geliri
+2025-06-27,2025,Haziran,6,Pazarlama,Reklam,gider,22960,Reklam - Pazarlama
+2025-06-19,2025,Haziran,6,Pazarlama,Reklam,gider,220,Reklam - Pazarlama
+2025-06-19,2025,Haziran,6,Pazarlama,Reklam,gider,62410,Reklam - Pazarlama
+2025-06-16,2025,Haziran,6,Pazarlama,Danismanlik,gider,37080,Danismanlik - Pazarlama
+2025-06-23,2025,Haziran,6,Pazarlama,Seyahat,gider,2230,Seyahat - Pazarlama
+2025-06-08,2025,Haziran,6,Pazarlama,Seyahat,gider,5510,Seyahat - Pazarlama
+2025-06-19,2025,Haziran,6,Pazarlama,Seyahat,gider,5130,Seyahat - Pazarlama
+2025-06-23,2025,Haziran,6,Pazarlama,Yazilim Lisans,gider,450,Yazilim Lisans - Pazarlama
+2025-06-26,2025,Haziran,6,Pazarlama,Yazilim Lisans,gider,7690,Yazilim Lisans - Pazarlama
+2025-06-17,2025,Haziran,6,Satis,Personel,gider,139390,Personel - Satis
+2025-06-19,2025,Haziran,6,Satis,Personel,gider,70390,Personel - Satis
+2025-06-11,2025,Haziran,6,Satis,Personel,gider,5260,Personel - Satis
+2025-06-01,2025,Haziran,6,Satis,Seyahat,gider,4370,Seyahat - Satis
+2025-06-24,2025,Haziran,6,Satis,Seyahat,gider,39880,Seyahat - Satis
+2025-06-26,2025,Haziran,6,Satis,Yazilim Lisans,gider,9550,Yazilim Lisans - Satis
+2025-06-22,2025,Haziran,6,Bilgi Teknolojileri,Yazilim Lisans,gider,41160,Yazilim Lisans - Bilgi Teknolojileri
+2025-06-28,2025,Haziran,6,Bilgi Teknolojileri,Yazilim Lisans,gider,8320,Yazilim Lisans - Bilgi Teknolojileri
+2025-06-18,2025,Haziran,6,Bilgi Teknolojileri,Yazilim Lisans,gider,34020,Yazilim Lisans - Bilgi Teknolojileri
+2025-06-20,2025,Haziran,6,Bilgi Teknolojileri,Donanim,gider,20670,Donanim - Bilgi Teknolojileri
+2025-06-03,2025,Haziran,6,Bilgi Teknolojileri,Donanim,gider,11360,Donanim - Bilgi Teknolojileri
+2025-06-08,2025,Haziran,6,Bilgi Teknolojileri,Donanim,gider,12600,Donanim - Bilgi Teknolojileri
+2025-06-14,2025,Haziran,6,Bilgi Teknolojileri,Personel,gider,199140,Personel - Bilgi Teknolojileri
+2025-06-01,2025,Haziran,6,Bilgi Teknolojileri,Bakim Onarim,gider,8160,Bakim Onarim - Bilgi Teknolojileri
+2025-06-02,2025,Haziran,6,Bilgi Teknolojileri,Bakim Onarim,gider,4150,Bakim Onarim - Bilgi Teknolojileri
+2025-06-11,2025,Haziran,6,Bilgi Teknolojileri,Bakim Onarim,gider,6490,Bakim Onarim - Bilgi Teknolojileri
+2025-06-14,2025,Haziran,6,Insan Kaynaklari,Personel,gider,82420,Personel - Insan Kaynaklari
+2025-06-19,2025,Haziran,6,Insan Kaynaklari,Personel,gider,46730,Personel - Insan Kaynaklari
+2025-06-28,2025,Haziran,6,Insan Kaynaklari,Egitim,gider,25050,Egitim - Insan Kaynaklari
+2025-06-15,2025,Haziran,6,Insan Kaynaklari,Danismanlik,gider,11540,Danismanlik - Insan Kaynaklari
+2025-06-21,2025,Haziran,6,Insan Kaynaklari,Danismanlik,gider,1810,Danismanlik - Insan Kaynaklari
+2025-06-15,2025,Haziran,6,Uretim,Personel,gider,350310,Personel - Uretim
+2025-06-12,2025,Haziran,6,Uretim,Bakim Onarim,gider,74790,Bakim Onarim - Uretim
+2025-06-10,2025,Haziran,6,Uretim,Donanim,gider,37960,Donanim - Uretim
+2025-06-07,2025,Haziran,6,Uretim,Donanim,gider,25120,Donanim - Uretim
+2025-06-19,2025,Haziran,6,Finans,Personel,gider,158970,Personel - Finans
+2025-06-09,2025,Haziran,6,Finans,Danismanlik,gider,3880,Danismanlik - Finans
+2025-06-01,2025,Haziran,6,Finans,Danismanlik,gider,12870,Danismanlik - Finans
+2025-06-19,2025,Haziran,6,Finans,Danismanlik,gider,8660,Danismanlik - Finans
+2025-06-24,2025,Haziran,6,Finans,Yazilim Lisans,gider,21600,Yazilim Lisans - Finans
+2025-06-26,2025,Haziran,6,Ar-Ge,Personel,gider,195980,Personel - Ar-Ge
+2025-06-12,2025,Haziran,6,Ar-Ge,Personel,gider,58140,Personel - Ar-Ge
+2025-06-22,2025,Haziran,6,Ar-Ge,Donanim,gider,22160,Donanim - Ar-Ge
+2025-06-22,2025,Haziran,6,Ar-Ge,Donanim,gider,23570,Donanim - Ar-Ge
+2025-06-19,2025,Haziran,6,Ar-Ge,Yazilim Lisans,gider,15590,Yazilim Lisans - Ar-Ge
+2025-06-12,2025,Haziran,6,Ar-Ge,Yazilim Lisans,gider,7450,Yazilim Lisans - Ar-Ge
+2025-06-24,2025,Haziran,6,Ar-Ge,Yazilim Lisans,gider,10630,Yazilim Lisans - Ar-Ge
+2025-06-05,2025,Haziran,6,Lojistik,Lojistik Nakliye,gider,67980,Lojistik Nakliye - Lojistik
+2025-06-26,2025,Haziran,6,Lojistik,Lojistik Nakliye,gider,15970,Lojistik Nakliye - Lojistik
+2025-06-27,2025,Haziran,6,Lojistik,Personel,gider,57550,Personel - Lojistik
+2025-06-16,2025,Haziran,6,Lojistik,Personel,gider,31250,Personel - Lojistik
+2025-06-26,2025,Haziran,6,Lojistik,Personel,gider,18870,Personel - Lojistik
+2025-06-03,2025,Haziran,6,Lojistik,Bakim Onarim,gider,15290,Bakim Onarim - Lojistik
+2025-06-08,2025,Haziran,6,Satis,Urun Satisi,gelir,1869100,Urun Satisi geliri
+2025-06-24,2025,Haziran,6,Satis,Hizmet Geliri,gelir,715300,Hizmet Geliri geliri
+2025-06-13,2025,Haziran,6,Satis,Bayi Geliri,gelir,449900,Bayi Geliri geliri
+2025-07-09,2025,Temmuz,7,Pazarlama,Reklam,gider,73560,Reklam - Pazarlama (buyuk kalem)
+2025-07-18,2025,Temmuz,7,Pazarlama,Reklam,gider,321410,Reklam - Pazarlama
+2025-07-12,2025,Temmuz,7,Pazarlama,Danismanlik,gider,6060,Danismanlik - Pazarlama
+2025-07-04,2025,Temmuz,7,Pazarlama,Danismanlik,gider,5270,Danismanlik - Pazarlama
+2025-07-22,2025,Temmuz,7,Pazarlama,Danismanlik,gider,7410,Danismanlik - Pazarlama
+2025-07-21,2025,Temmuz,7,Pazarlama,Seyahat,gider,2400,Seyahat - Pazarlama
+2025-07-27,2025,Temmuz,7,Pazarlama,Seyahat,gider,4460,Seyahat - Pazarlama
+2025-07-15,2025,Temmuz,7,Pazarlama,Seyahat,gider,4730,Seyahat - Pazarlama
+2025-07-02,2025,Temmuz,7,Pazarlama,Yazilim Lisans,gider,8770,Yazilim Lisans - Pazarlama
+2025-07-10,2025,Temmuz,7,Pazarlama,Yazilim Lisans,gider,3410,Yazilim Lisans - Pazarlama
+2025-07-05,2025,Temmuz,7,Satis,Personel,gider,257020,Personel - Satis
+2025-07-24,2025,Temmuz,7,Satis,Seyahat,gider,12160,Seyahat - Satis
+2025-07-05,2025,Temmuz,7,Satis,Seyahat,gider,9430,Seyahat - Satis
+2025-07-14,2025,Temmuz,7,Satis,Seyahat,gider,10260,Seyahat - Satis
+2025-07-12,2025,Temmuz,7,Satis,Yazilim Lisans,gider,3950,Yazilim Lisans - Satis
+2025-07-07,2025,Temmuz,7,Satis,Yazilim Lisans,gider,9220,Yazilim Lisans - Satis
+2025-07-15,2025,Temmuz,7,Satis,Yazilim Lisans,gider,320,Yazilim Lisans - Satis
+2025-07-18,2025,Temmuz,7,Bilgi Teknolojileri,Yazilim Lisans,gider,7840,Yazilim Lisans - Bilgi Teknolojileri
+2025-07-21,2025,Temmuz,7,Bilgi Teknolojileri,Yazilim Lisans,gider,54110,Yazilim Lisans - Bilgi Teknolojileri
+2025-07-28,2025,Temmuz,7,Bilgi Teknolojileri,Donanim,gider,44100,Donanim - Bilgi Teknolojileri
+2025-07-20,2025,Temmuz,7,Bilgi Teknolojileri,Personel,gider,213810,Personel - Bilgi Teknolojileri
+2025-07-19,2025,Temmuz,7,Bilgi Teknolojileri,Bakim Onarim,gider,12470,Bakim Onarim - Bilgi Teknolojileri
+2025-07-07,2025,Temmuz,7,Bilgi Teknolojileri,Bakim Onarim,gider,6450,Bakim Onarim - Bilgi Teknolojileri
+2025-07-27,2025,Temmuz,7,Insan Kaynaklari,Personel,gider,99420,Personel - Insan Kaynaklari
+2025-07-20,2025,Temmuz,7,Insan Kaynaklari,Egitim,gider,29370,Egitim - Insan Kaynaklari
+2025-07-18,2025,Temmuz,7,Insan Kaynaklari,Danismanlik,gider,8610,Danismanlik - Insan Kaynaklari
+2025-07-26,2025,Temmuz,7,Uretim,Personel,gider,226010,Personel - Uretim
+2025-07-08,2025,Temmuz,7,Uretim,Personel,gider,34380,Personel - Uretim
+2025-07-19,2025,Temmuz,7,Uretim,Personel,gider,93450,Personel - Uretim
+2025-07-14,2025,Temmuz,7,Uretim,Bakim Onarim,gider,47780,Bakim Onarim - Uretim
+2025-07-19,2025,Temmuz,7,Uretim,Donanim,gider,24340,Donanim - Uretim
+2025-07-04,2025,Temmuz,7,Uretim,Donanim,gider,19660,Donanim - Uretim
+2025-07-17,2025,Temmuz,7,Finans,Personel,gider,3520,Personel - Finans
+2025-07-10,2025,Temmuz,7,Finans,Personel,gider,63500,Personel - Finans
+2025-07-15,2025,Temmuz,7,Finans,Personel,gider,70290,Personel - Finans
+2025-07-04,2025,Temmuz,7,Finans,Danismanlik,gider,22170,Danismanlik - Finans
+2025-07-16,2025,Temmuz,7,Finans,Danismanlik,gider,11150,Danismanlik - Finans
+2025-07-05,2025,Temmuz,7,Finans,Yazilim Lisans,gider,19880,Yazilim Lisans - Finans
+2025-07-20,2025,Temmuz,7,Ar-Ge,Personel,gider,76740,Personel - Ar-Ge
+2025-07-17,2025,Temmuz,7,Ar-Ge,Personel,gider,93360,Personel - Ar-Ge
+2025-07-10,2025,Temmuz,7,Ar-Ge,Personel,gider,49930,Personel - Ar-Ge
+2025-07-04,2025,Temmuz,7,Ar-Ge,Donanim,gider,61340,Donanim - Ar-Ge
+2025-07-08,2025,Temmuz,7,Ar-Ge,Yazilim Lisans,gider,17850,Yazilim Lisans - Ar-Ge
+2025-07-14,2025,Temmuz,7,Ar-Ge,Yazilim Lisans,gider,5330,Yazilim Lisans - Ar-Ge
+2025-07-11,2025,Temmuz,7,Ar-Ge,Yazilim Lisans,gider,11180,Yazilim Lisans - Ar-Ge
+2025-07-12,2025,Temmuz,7,Lojistik,Lojistik Nakliye,gider,10990,Lojistik Nakliye - Lojistik
+2025-07-05,2025,Temmuz,7,Lojistik,Lojistik Nakliye,gider,49300,Lojistik Nakliye - Lojistik
+2025-07-22,2025,Temmuz,7,Lojistik,Lojistik Nakliye,gider,76840,Lojistik Nakliye - Lojistik
+2025-07-04,2025,Temmuz,7,Lojistik,Personel,gider,125340,Personel - Lojistik
+2025-07-19,2025,Temmuz,7,Lojistik,Bakim Onarim,gider,22690,Bakim Onarim - Lojistik
+2025-07-18,2025,Temmuz,7,Satis,Urun Satisi,gelir,2283900,Urun Satisi geliri
+2025-07-04,2025,Temmuz,7,Satis,Hizmet Geliri,gelir,621000,Hizmet Geliri geliri
+2025-07-28,2025,Temmuz,7,Satis,Bayi Geliri,gelir,415400,Bayi Geliri geliri
+2025-08-04,2025,Agustos,8,Pazarlama,Reklam,gider,7980,Reklam - Pazarlama
+2025-08-19,2025,Agustos,8,Pazarlama,Reklam,gider,44630,Reklam - Pazarlama
+2025-08-17,2025,Agustos,8,Pazarlama,Reklam,gider,48480,Reklam - Pazarlama
+2025-08-12,2025,Agustos,8,Pazarlama,Danismanlik,gider,20870,Danismanlik - Pazarlama
+2025-08-28,2025,Agustos,8,Pazarlama,Seyahat,gider,8170,Seyahat - Pazarlama
+2025-08-18,2025,Agustos,8,Pazarlama,Seyahat,gider,11490,Seyahat - Pazarlama
+2025-08-22,2025,Agustos,8,Pazarlama,Yazilim Lisans,gider,4700,Yazilim Lisans - Pazarlama
+2025-08-27,2025,Agustos,8,Pazarlama,Yazilim Lisans,gider,3880,Yazilim Lisans - Pazarlama
+2025-08-23,2025,Agustos,8,Pazarlama,Yazilim Lisans,gider,4240,Yazilim Lisans - Pazarlama
+2025-08-06,2025,Agustos,8,Satis,Personel,gider,79620,Personel - Satis
+2025-08-28,2025,Agustos,8,Satis,Personel,gider,96240,Personel - Satis
+2025-08-05,2025,Agustos,8,Satis,Personel,gider,36660,Personel - Satis
+2025-08-01,2025,Agustos,8,Satis,Seyahat,gider,37030,Seyahat - Satis
+2025-08-12,2025,Agustos,8,Satis,Yazilim Lisans,gider,5170,Yazilim Lisans - Satis
+2025-08-10,2025,Agustos,8,Satis,Yazilim Lisans,gider,4200,Yazilim Lisans - Satis
+2025-08-25,2025,Agustos,8,Bilgi Teknolojileri,Yazilim Lisans,gider,27220,Yazilim Lisans - Bilgi Teknolojileri
+2025-08-20,2025,Agustos,8,Bilgi Teknolojileri,Yazilim Lisans,gider,40330,Yazilim Lisans - Bilgi Teknolojileri
+2025-08-02,2025,Agustos,8,Bilgi Teknolojileri,Yazilim Lisans,gider,7100,Yazilim Lisans - Bilgi Teknolojileri
+2025-08-07,2025,Agustos,8,Bilgi Teknolojileri,Donanim,gider,17600,Donanim - Bilgi Teknolojileri
+2025-08-25,2025,Agustos,8,Bilgi Teknolojileri,Donanim,gider,25190,Donanim - Bilgi Teknolojileri
+2025-08-17,2025,Agustos,8,Bilgi Teknolojileri,Donanim,gider,17190,Donanim - Bilgi Teknolojileri
+2025-08-17,2025,Agustos,8,Bilgi Teknolojileri,Personel,gider,90690,Personel - Bilgi Teknolojileri
+2025-08-22,2025,Agustos,8,Bilgi Teknolojileri,Personel,gider,79310,Personel - Bilgi Teknolojileri
+2025-08-25,2025,Agustos,8,Bilgi Teknolojileri,Bakim Onarim,gider,480,Bakim Onarim - Bilgi Teknolojileri
+2025-08-05,2025,Agustos,8,Bilgi Teknolojileri,Bakim Onarim,gider,1780,Bakim Onarim - Bilgi Teknolojileri
+2025-08-25,2025,Agustos,8,Bilgi Teknolojileri,Bakim Onarim,gider,8250,Bakim Onarim - Bilgi Teknolojileri
+2025-08-14,2025,Agustos,8,Insan Kaynaklari,Personel,gider,108640,Personel - Insan Kaynaklari
+2025-08-12,2025,Agustos,8,Insan Kaynaklari,Egitim,gider,2310,Egitim - Insan Kaynaklari
+2025-08-03,2025,Agustos,8,Insan Kaynaklari,Egitim,gider,5620,Egitim - Insan Kaynaklari
+2025-08-13,2025,Agustos,8,Insan Kaynaklari,Egitim,gider,6720,Egitim - Insan Kaynaklari
+2025-08-03,2025,Agustos,8,Insan Kaynaklari,Danismanlik,gider,19880,Danismanlik - Insan Kaynaklari
+2025-08-13,2025,Agustos,8,Uretim,Personel,gider,132580,Personel - Uretim
+2025-08-01,2025,Agustos,8,Uretim,Personel,gider,209850,Personel - Uretim
+2025-08-11,2025,Agustos,8,Uretim,Personel,gider,94910,Personel - Uretim
+2025-08-03,2025,Agustos,8,Uretim,Bakim Onarim,gider,19430,Bakim Onarim - Uretim
+2025-08-14,2025,Agustos,8,Uretim,Bakim Onarim,gider,21480,Bakim Onarim - Uretim
+2025-08-24,2025,Agustos,8,Uretim,Donanim,gider,17300,Donanim - Uretim
+2025-08-11,2025,Agustos,8,Uretim,Donanim,gider,3400,Donanim - Uretim
+2025-08-08,2025,Agustos,8,Uretim,Donanim,gider,37600,Donanim - Uretim
+2025-08-25,2025,Agustos,8,Finans,Personel,gider,62350,Personel - Finans
+2025-08-12,2025,Agustos,8,Finans,Personel,gider,52240,Personel - Finans
+2025-08-12,2025,Agustos,8,Finans,Personel,gider,19090,Personel - Finans
+2025-08-05,2025,Agustos,8,Finans,Danismanlik,gider,35970,Danismanlik - Finans
+2025-08-21,2025,Agustos,8,Finans,Yazilim Lisans,gider,14170,Yazilim Lisans - Finans
+2025-08-15,2025,Agustos,8,Ar-Ge,Personel,gider,54940,Personel - Ar-Ge
+2025-08-22,2025,Agustos,8,Ar-Ge,Personel,gider,83890,Personel - Ar-Ge
+2025-08-19,2025,Agustos,8,Ar-Ge,Personel,gider,84500,Personel - Ar-Ge
+2025-08-05,2025,Agustos,8,Ar-Ge,Donanim,gider,43080,Donanim - Ar-Ge
+2025-08-15,2025,Agustos,8,Ar-Ge,Donanim,gider,31260,Donanim - Ar-Ge
+2025-08-12,2025,Agustos,8,Ar-Ge,Yazilim Lisans,gider,10180,Yazilim Lisans - Ar-Ge
+2025-08-17,2025,Agustos,8,Ar-Ge,Yazilim Lisans,gider,7560,Yazilim Lisans - Ar-Ge
+2025-08-27,2025,Agustos,8,Lojistik,Lojistik Nakliye,gider,81510,Lojistik Nakliye - Lojistik
+2025-08-17,2025,Agustos,8,Lojistik,Personel,gider,99170,Personel - Lojistik
+2025-08-21,2025,Agustos,8,Lojistik,Bakim Onarim,gider,7100,Bakim Onarim - Lojistik
+2025-08-07,2025,Agustos,8,Lojistik,Bakim Onarim,gider,3570,Bakim Onarim - Lojistik
+2025-08-11,2025,Agustos,8,Lojistik,Bakim Onarim,gider,6420,Bakim Onarim - Lojistik
+2025-08-17,2025,Agustos,8,Satis,Urun Satisi,gelir,2137900,Urun Satisi geliri
+2025-08-02,2025,Agustos,8,Satis,Hizmet Geliri,gelir,593100,Hizmet Geliri geliri
+2025-08-26,2025,Agustos,8,Satis,Bayi Geliri,gelir,426100,Bayi Geliri geliri
+2025-09-23,2025,Eylul,9,Pazarlama,Reklam,gider,12600,Reklam - Pazarlama
+2025-09-15,2025,Eylul,9,Pazarlama,Reklam,gider,96580,Reklam - Pazarlama
+2025-09-15,2025,Eylul,9,Pazarlama,Reklam,gider,5850,Reklam - Pazarlama
+2025-09-14,2025,Eylul,9,Pazarlama,Danismanlik,gider,15880,Danismanlik - Pazarlama
+2025-09-25,2025,Eylul,9,Pazarlama,Danismanlik,gider,12050,Danismanlik - Pazarlama
+2025-09-22,2025,Eylul,9,Pazarlama,Seyahat,gider,10590,Seyahat - Pazarlama
+2025-09-13,2025,Eylul,9,Pazarlama,Seyahat,gider,1080,Seyahat - Pazarlama
+2025-09-10,2025,Eylul,9,Pazarlama,Seyahat,gider,1550,Seyahat - Pazarlama
+2025-09-05,2025,Eylul,9,Pazarlama,Yazilim Lisans,gider,3620,Yazilim Lisans - Pazarlama
+2025-09-12,2025,Eylul,9,Pazarlama,Yazilim Lisans,gider,1380,Yazilim Lisans - Pazarlama
+2025-09-10,2025,Eylul,9,Pazarlama,Yazilim Lisans,gider,2410,Yazilim Lisans - Pazarlama
+2025-09-03,2025,Eylul,9,Satis,Personel,gider,40160,Personel - Satis
+2025-09-10,2025,Eylul,9,Satis,Personel,gider,220760,Personel - Satis
+2025-09-27,2025,Eylul,9,Satis,Seyahat,gider,20410,Seyahat - Satis
+2025-09-24,2025,Eylul,9,Satis,Seyahat,gider,16820,Seyahat - Satis
+2025-09-14,2025,Eylul,9,Satis,Yazilim Lisans,gider,16420,Yazilim Lisans - Satis
+2025-09-25,2025,Eylul,9,Bilgi Teknolojileri,Yazilim Lisans,gider,30220,Yazilim Lisans - Bilgi Teknolojileri
+2025-09-16,2025,Eylul,9,Bilgi Teknolojileri,Yazilim Lisans,gider,35910,Yazilim Lisans - Bilgi Teknolojileri
+2025-09-28,2025,Eylul,9,Bilgi Teknolojileri,Donanim,gider,36870,Donanim - Bilgi Teknolojileri
+2025-09-11,2025,Eylul,9,Bilgi Teknolojileri,Personel,gider,102800,Personel - Bilgi Teknolojileri
+2025-09-25,2025,Eylul,9,Bilgi Teknolojileri,Personel,gider,108780,Personel - Bilgi Teknolojileri
+2025-09-20,2025,Eylul,9,Bilgi Teknolojileri,Personel,gider,4650,Personel - Bilgi Teknolojileri
+2025-09-23,2025,Eylul,9,Bilgi Teknolojileri,Bakim Onarim,gider,8300,Bakim Onarim - Bilgi Teknolojileri
+2025-09-02,2025,Eylul,9,Insan Kaynaklari,Personel,gider,132440,Personel - Insan Kaynaklari
+2025-09-20,2025,Eylul,9,Insan Kaynaklari,Egitim,gider,19970,Egitim - Insan Kaynaklari
+2025-09-26,2025,Eylul,9,Insan Kaynaklari,Danismanlik,gider,6190,Danismanlik - Insan Kaynaklari
+2025-09-26,2025,Eylul,9,Insan Kaynaklari,Danismanlik,gider,6330,Danismanlik - Insan Kaynaklari
+2025-09-15,2025,Eylul,9,Uretim,Personel,gider,212110,Personel - Uretim
+2025-09-15,2025,Eylul,9,Uretim,Personel,gider,178370,Personel - Uretim
+2025-09-26,2025,Eylul,9,Uretim,Bakim Onarim,gider,16170,Bakim Onarim - Uretim
+2025-09-20,2025,Eylul,9,Uretim,Bakim Onarim,gider,29620,Bakim Onarim - Uretim
+2025-09-05,2025,Eylul,9,Uretim,Bakim Onarim,gider,25040,Bakim Onarim - Uretim
+2025-09-04,2025,Eylul,9,Uretim,Donanim,gider,36830,Donanim - Uretim
+2025-09-23,2025,Eylul,9,Uretim,Donanim,gider,23360,Donanim - Uretim
+2025-09-15,2025,Eylul,9,Finans,Personel,gider,54150,Personel - Finans
+2025-09-17,2025,Eylul,9,Finans,Personel,gider,103500,Personel - Finans
+2025-09-12,2025,Eylul,9,Finans,Danismanlik,gider,20480,Danismanlik - Finans
+2025-09-03,2025,Eylul,9,Finans,Yazilim Lisans,gider,15780,Yazilim Lisans - Finans
+2025-09-12,2025,Eylul,9,Finans,Yazilim Lisans,gider,7410,Yazilim Lisans - Finans
+2025-09-21,2025,Eylul,9,Ar-Ge,Personel,gider,238890,Personel - Ar-Ge
+2025-09-27,2025,Eylul,9,Ar-Ge,Donanim,gider,54930,Donanim - Ar-Ge
+2025-09-01,2025,Eylul,9,Ar-Ge,Yazilim Lisans,gider,6320,Yazilim Lisans - Ar-Ge
+2025-09-09,2025,Eylul,9,Ar-Ge,Yazilim Lisans,gider,8280,Yazilim Lisans - Ar-Ge
+2025-09-07,2025,Eylul,9,Ar-Ge,Yazilim Lisans,gider,12200,Yazilim Lisans - Ar-Ge
+2025-09-08,2025,Eylul,9,Lojistik,Lojistik Nakliye,gider,47400,Lojistik Nakliye - Lojistik
+2025-09-10,2025,Eylul,9,Lojistik,Lojistik Nakliye,gider,32950,Lojistik Nakliye - Lojistik
+2025-09-04,2025,Eylul,9,Lojistik,Lojistik Nakliye,gider,60430,Lojistik Nakliye - Lojistik
+2025-09-20,2025,Eylul,9,Lojistik,Personel,gider,27860,Personel - Lojistik
+2025-09-18,2025,Eylul,9,Lojistik,Personel,gider,6760,Personel - Lojistik
+2025-09-01,2025,Eylul,9,Lojistik,Personel,gider,55160,Personel - Lojistik
+2025-09-08,2025,Eylul,9,Lojistik,Bakim Onarim,gider,2580,Bakim Onarim - Lojistik
+2025-09-19,2025,Eylul,9,Lojistik,Bakim Onarim,gider,7720,Bakim Onarim - Lojistik
+2025-09-14,2025,Eylul,9,Lojistik,Bakim Onarim,gider,11050,Bakim Onarim - Lojistik
+2025-09-22,2025,Eylul,9,Satis,Urun Satisi,gelir,1955600,Urun Satisi geliri
+2025-09-12,2025,Eylul,9,Satis,Hizmet Geliri,gelir,586800,Hizmet Geliri geliri
+2025-09-17,2025,Eylul,9,Satis,Bayi Geliri,gelir,372100,Bayi Geliri geliri
+2025-10-21,2025,Ekim,10,Pazarlama,Reklam,gider,37850,Reklam - Pazarlama
+2025-10-13,2025,Ekim,10,Pazarlama,Reklam,gider,26670,Reklam - Pazarlama
+2025-10-12,2025,Ekim,10,Pazarlama,Reklam,gider,32110,Reklam - Pazarlama
+2025-10-24,2025,Ekim,10,Pazarlama,Danismanlik,gider,22240,Danismanlik - Pazarlama
+2025-10-18,2025,Ekim,10,Pazarlama,Seyahat,gider,11640,Seyahat - Pazarlama
+2025-10-11,2025,Ekim,10,Pazarlama,Seyahat,gider,5260,Seyahat - Pazarlama
+2025-10-27,2025,Ekim,10,Pazarlama,Seyahat,gider,700,Seyahat - Pazarlama
+2025-10-26,2025,Ekim,10,Pazarlama,Yazilim Lisans,gider,2730,Yazilim Lisans - Pazarlama
+2025-10-05,2025,Ekim,10,Pazarlama,Yazilim Lisans,gider,4090,Yazilim Lisans - Pazarlama
+2025-10-03,2025,Ekim,10,Pazarlama,Yazilim Lisans,gider,3710,Yazilim Lisans - Pazarlama
+2025-10-02,2025,Ekim,10,Satis,Personel,gider,247040,Personel - Satis
+2025-10-27,2025,Ekim,10,Satis,Seyahat,gider,28390,Seyahat - Satis
+2025-10-18,2025,Ekim,10,Satis,Seyahat,gider,15680,Seyahat - Satis
+2025-10-28,2025,Ekim,10,Satis,Yazilim Lisans,gider,1800,Yazilim Lisans - Satis
+2025-10-21,2025,Ekim,10,Satis,Yazilim Lisans,gider,3370,Yazilim Lisans - Satis
+2025-10-11,2025,Ekim,10,Satis,Yazilim Lisans,gider,7370,Yazilim Lisans - Satis
+2025-10-13,2025,Ekim,10,Bilgi Teknolojileri,Yazilim Lisans,gider,30740,Yazilim Lisans - Bilgi Teknolojileri
+2025-10-11,2025,Ekim,10,Bilgi Teknolojileri,Yazilim Lisans,gider,25690,Yazilim Lisans - Bilgi Teknolojileri
+2025-10-09,2025,Ekim,10,Bilgi Teknolojileri,Donanim,gider,98610,Donanim - Bilgi Teknolojileri (buyuk kalem)
+2025-10-26,2025,Ekim,10,Bilgi Teknolojileri,Donanim,gider,214020,Donanim - Bilgi Teknolojileri
+2025-10-18,2025,Ekim,10,Bilgi Teknolojileri,Personel,gider,72600,Personel - Bilgi Teknolojileri
+2025-10-10,2025,Ekim,10,Bilgi Teknolojileri,Personel,gider,99090,Personel - Bilgi Teknolojileri
+2025-10-06,2025,Ekim,10,Bilgi Teknolojileri,Bakim Onarim,gider,2210,Bakim Onarim - Bilgi Teknolojileri
+2025-10-23,2025,Ekim,10,Bilgi Teknolojileri,Bakim Onarim,gider,3340,Bakim Onarim - Bilgi Teknolojileri
+2025-10-15,2025,Ekim,10,Bilgi Teknolojileri,Bakim Onarim,gider,5370,Bakim Onarim - Bilgi Teknolojileri
+2025-10-21,2025,Ekim,10,Insan Kaynaklari,Personel,gider,67530,Personel - Insan Kaynaklari
+2025-10-26,2025,Ekim,10,Insan Kaynaklari,Personel,gider,47770,Personel - Insan Kaynaklari
+2025-10-06,2025,Ekim,10,Insan Kaynaklari,Egitim,gider,7810,Egitim - Insan Kaynaklari
+2025-10-01,2025,Ekim,10,Insan Kaynaklari,Egitim,gider,9860,Egitim - Insan Kaynaklari
+2025-10-05,2025,Ekim,10,Insan Kaynaklari,Egitim,gider,14410,Egitim - Insan Kaynaklari
+2025-10-25,2025,Ekim,10,Insan Kaynaklari,Danismanlik,gider,6870,Danismanlik - Insan Kaynaklari
+2025-10-21,2025,Ekim,10,Insan Kaynaklari,Danismanlik,gider,13280,Danismanlik - Insan Kaynaklari
+2025-10-12,2025,Ekim,10,Uretim,Personel,gider,19410,Personel - Uretim
+2025-10-12,2025,Ekim,10,Uretim,Personel,gider,91980,Personel - Uretim
+2025-10-15,2025,Ekim,10,Uretim,Personel,gider,269710,Personel - Uretim
+2025-10-04,2025,Ekim,10,Uretim,Bakim Onarim,gider,27250,Bakim Onarim - Uretim
+2025-10-01,2025,Ekim,10,Uretim,Bakim Onarim,gider,23340,Bakim Onarim - Uretim
+2025-10-24,2025,Ekim,10,Uretim,Bakim Onarim,gider,20690,Bakim Onarim - Uretim
+2025-10-07,2025,Ekim,10,Uretim,Donanim,gider,2240,Donanim - Uretim
+2025-10-20,2025,Ekim,10,Uretim,Donanim,gider,14760,Donanim - Uretim
+2025-10-10,2025,Ekim,10,Uretim,Donanim,gider,13410,Donanim - Uretim
+2025-10-28,2025,Ekim,10,Finans,Personel,gider,152640,Personel - Finans
+2025-10-28,2025,Ekim,10,Finans,Danismanlik,gider,6840,Danismanlik - Finans
+2025-10-11,2025,Ekim,10,Finans,Danismanlik,gider,1350,Danismanlik - Finans
+2025-10-22,2025,Ekim,10,Finans,Danismanlik,gider,10480,Danismanlik - Finans
+2025-10-23,2025,Ekim,10,Finans,Yazilim Lisans,gider,6100,Yazilim Lisans - Finans
+2025-10-23,2025,Ekim,10,Finans,Yazilim Lisans,gider,6300,Yazilim Lisans - Finans
+2025-10-21,2025,Ekim,10,Finans,Yazilim Lisans,gider,3310,Yazilim Lisans - Finans
+2025-10-07,2025,Ekim,10,Ar-Ge,Personel,gider,237030,Personel - Ar-Ge
+2025-10-12,2025,Ekim,10,Ar-Ge,Donanim,gider,3890,Donanim - Ar-Ge
+2025-10-15,2025,Ekim,10,Ar-Ge,Donanim,gider,82010,Donanim - Ar-Ge
+2025-10-23,2025,Ekim,10,Ar-Ge,Yazilim Lisans,gider,22580,Yazilim Lisans - Ar-Ge
+2025-10-24,2025,Ekim,10,Ar-Ge,Yazilim Lisans,gider,1680,Yazilim Lisans - Ar-Ge
+2025-10-16,2025,Ekim,10,Ar-Ge,Yazilim Lisans,gider,10170,Yazilim Lisans - Ar-Ge
+2025-10-15,2025,Ekim,10,Lojistik,Lojistik Nakliye,gider,5170,Lojistik Nakliye - Lojistik
+2025-10-15,2025,Ekim,10,Lojistik,Lojistik Nakliye,gider,68150,Lojistik Nakliye - Lojistik
+2025-10-22,2025,Ekim,10,Lojistik,Lojistik Nakliye,gider,45020,Lojistik Nakliye - Lojistik
+2025-10-14,2025,Ekim,10,Lojistik,Personel,gider,39920,Personel - Lojistik
+2025-10-17,2025,Ekim,10,Lojistik,Personel,gider,11350,Personel - Lojistik
+2025-10-28,2025,Ekim,10,Lojistik,Personel,gider,60290,Personel - Lojistik
+2025-10-06,2025,Ekim,10,Lojistik,Bakim Onarim,gider,12000,Bakim Onarim - Lojistik
+2025-10-23,2025,Ekim,10,Satis,Urun Satisi,gelir,2044500,Urun Satisi geliri
+2025-10-17,2025,Ekim,10,Satis,Hizmet Geliri,gelir,621100,Hizmet Geliri geliri
+2025-10-28,2025,Ekim,10,Satis,Bayi Geliri,gelir,504500,Bayi Geliri geliri
+2025-11-03,2025,Kasim,11,Pazarlama,Reklam,gider,12980,Reklam - Pazarlama
+2025-11-17,2025,Kasim,11,Pazarlama,Reklam,gider,29570,Reklam - Pazarlama
+2025-11-21,2025,Kasim,11,Pazarlama,Reklam,gider,29070,Reklam - Pazarlama
+2025-11-20,2025,Kasim,11,Pazarlama,Danismanlik,gider,20580,Danismanlik - Pazarlama
+2025-11-21,2025,Kasim,11,Pazarlama,Seyahat,gider,780,Seyahat - Pazarlama
+2025-11-25,2025,Kasim,11,Pazarlama,Seyahat,gider,16330,Seyahat - Pazarlama
+2025-11-19,2025,Kasim,11,Pazarlama,Seyahat,gider,1540,Seyahat - Pazarlama
+2025-11-21,2025,Kasim,11,Pazarlama,Yazilim Lisans,gider,2060,Yazilim Lisans - Pazarlama
+2025-11-18,2025,Kasim,11,Pazarlama,Yazilim Lisans,gider,3160,Yazilim Lisans - Pazarlama
+2025-11-10,2025,Kasim,11,Pazarlama,Yazilim Lisans,gider,2460,Yazilim Lisans - Pazarlama
+2025-11-22,2025,Kasim,11,Satis,Personel,gider,244740,Personel - Satis
+2025-11-07,2025,Kasim,11,Satis,Seyahat,gider,2060,Seyahat - Satis
+2025-11-11,2025,Kasim,11,Satis,Seyahat,gider,15090,Seyahat - Satis
+2025-11-20,2025,Kasim,11,Satis,Seyahat,gider,16620,Seyahat - Satis
+2025-11-13,2025,Kasim,11,Satis,Yazilim Lisans,gider,4640,Yazilim Lisans - Satis
+2025-11-05,2025,Kasim,11,Satis,Yazilim Lisans,gider,5440,Yazilim Lisans - Satis
+2025-11-15,2025,Kasim,11,Bilgi Teknolojileri,Yazilim Lisans,gider,78880,Yazilim Lisans - Bilgi Teknolojileri
+2025-11-10,2025,Kasim,11,Bilgi Teknolojileri,Donanim,gider,34180,Donanim - Bilgi Teknolojileri
+2025-11-06,2025,Kasim,11,Bilgi Teknolojileri,Personel,gider,51620,Personel - Bilgi Teknolojileri
+2025-11-27,2025,Kasim,11,Bilgi Teknolojileri,Personel,gider,179910,Personel - Bilgi Teknolojileri
+2025-11-17,2025,Kasim,11,Bilgi Teknolojileri,Bakim Onarim,gider,6050,Bakim Onarim - Bilgi Teknolojileri
+2025-11-15,2025,Kasim,11,Bilgi Teknolojileri,Bakim Onarim,gider,5070,Bakim Onarim - Bilgi Teknolojileri
+2025-11-13,2025,Kasim,11,Insan Kaynaklari,Personel,gider,123140,Personel - Insan Kaynaklari
+2025-11-02,2025,Kasim,11,Insan Kaynaklari,Egitim,gider,22520,Egitim - Insan Kaynaklari
+2025-11-04,2025,Kasim,11,Insan Kaynaklari,Danismanlik,gider,6710,Danismanlik - Insan Kaynaklari
+2025-11-14,2025,Kasim,11,Insan Kaynaklari,Danismanlik,gider,2850,Danismanlik - Insan Kaynaklari
+2025-11-05,2025,Kasim,11,Insan Kaynaklari,Danismanlik,gider,80,Danismanlik - Insan Kaynaklari
+2025-11-19,2025,Kasim,11,Uretim,Personel,gider,217030,Personel - Uretim
+2025-11-18,2025,Kasim,11,Uretim,Personel,gider,237570,Personel - Uretim
+2025-11-15,2025,Kasim,11,Uretim,Bakim Onarim,gider,43410,Bakim Onarim - Uretim
+2025-11-13,2025,Kasim,11,Uretim,Donanim,gider,21720,Donanim - Uretim
+2025-11-12,2025,Kasim,11,Uretim,Donanim,gider,3790,Donanim - Uretim
+2025-11-26,2025,Kasim,11,Uretim,Donanim,gider,31130,Donanim - Uretim
+2025-11-17,2025,Kasim,11,Finans,Personel,gider,132480,Personel - Finans
+2025-11-13,2025,Kasim,11,Finans,Personel,gider,34930,Personel - Finans
+2025-11-26,2025,Kasim,11,Finans,Danismanlik,gider,30800,Danismanlik - Finans
+2025-11-11,2025,Kasim,11,Finans,Yazilim Lisans,gider,7990,Yazilim Lisans - Finans
+2025-11-06,2025,Kasim,11,Finans,Yazilim Lisans,gider,1250,Yazilim Lisans - Finans
+2025-11-13,2025,Kasim,11,Finans,Yazilim Lisans,gider,8330,Yazilim Lisans - Finans
+2025-11-17,2025,Kasim,11,Ar-Ge,Personel,gider,168650,Personel - Ar-Ge
+2025-11-18,2025,Kasim,11,Ar-Ge,Personel,gider,144110,Personel - Ar-Ge
+2025-11-22,2025,Kasim,11,Ar-Ge,Donanim,gider,45830,Donanim - Ar-Ge
+2025-11-04,2025,Kasim,11,Ar-Ge,Donanim,gider,20690,Donanim - Ar-Ge
+2025-11-09,2025,Kasim,11,Ar-Ge,Yazilim Lisans,gider,16110,Yazilim Lisans - Ar-Ge
+2025-11-21,2025,Kasim,11,Ar-Ge,Yazilim Lisans,gider,11620,Yazilim Lisans - Ar-Ge
+2025-11-26,2025,Kasim,11,Ar-Ge,Yazilim Lisans,gider,11020,Yazilim Lisans - Ar-Ge
+2025-11-19,2025,Kasim,11,Lojistik,Lojistik Nakliye,gider,154610,Lojistik Nakliye - Lojistik
+2025-11-22,2025,Kasim,11,Lojistik,Personel,gider,42810,Personel - Lojistik
+2025-11-08,2025,Kasim,11,Lojistik,Personel,gider,58110,Personel - Lojistik
+2025-11-02,2025,Kasim,11,Lojistik,Personel,gider,10210,Personel - Lojistik
+2025-11-11,2025,Kasim,11,Lojistik,Bakim Onarim,gider,20820,Bakim Onarim - Lojistik
+2025-11-14,2025,Kasim,11,Satis,Urun Satisi,gelir,2115100,Urun Satisi geliri
+2025-11-14,2025,Kasim,11,Satis,Hizmet Geliri,gelir,721600,Hizmet Geliri geliri
+2025-11-20,2025,Kasim,11,Satis,Bayi Geliri,gelir,448300,Bayi Geliri geliri
+2025-12-18,2025,Aralik,12,Pazarlama,Reklam,gider,44730,Reklam - Pazarlama
+2025-12-11,2025,Aralik,12,Pazarlama,Reklam,gider,43400,Reklam - Pazarlama
+2025-12-22,2025,Aralik,12,Pazarlama,Reklam,gider,31890,Reklam - Pazarlama
+2025-12-18,2025,Aralik,12,Pazarlama,Danismanlik,gider,27810,Danismanlik - Pazarlama
+2025-12-16,2025,Aralik,12,Pazarlama,Seyahat,gider,5340,Seyahat - Pazarlama
+2025-12-07,2025,Aralik,12,Pazarlama,Seyahat,gider,6300,Seyahat - Pazarlama
+2025-12-08,2025,Aralik,12,Pazarlama,Seyahat,gider,2070,Seyahat - Pazarlama
+2025-12-23,2025,Aralik,12,Pazarlama,Yazilim Lisans,gider,4110,Yazilim Lisans - Pazarlama
+2025-12-23,2025,Aralik,12,Pazarlama,Yazilim Lisans,gider,3760,Yazilim Lisans - Pazarlama
+2025-12-04,2025,Aralik,12,Satis,Personel,gider,110490,Personel - Satis
+2025-12-19,2025,Aralik,12,Satis,Personel,gider,94120,Personel - Satis
+2025-12-22,2025,Aralik,12,Satis,Personel,gider,32360,Personel - Satis
+2025-12-26,2025,Aralik,12,Satis,Seyahat,gider,17550,Seyahat - Satis
+2025-12-05,2025,Aralik,12,Satis,Seyahat,gider,20470,Seyahat - Satis
+2025-12-24,2025,Aralik,12,Satis,Yazilim Lisans,gider,540,Yazilim Lisans - Satis
+2025-12-16,2025,Aralik,12,Satis,Yazilim Lisans,gider,6330,Yazilim Lisans - Satis
+2025-12-07,2025,Aralik,12,Satis,Yazilim Lisans,gider,4490,Yazilim Lisans - Satis
+2025-12-19,2025,Aralik,12,Bilgi Teknolojileri,Yazilim Lisans,gider,26150,Yazilim Lisans - Bilgi Teknolojileri
+2025-12-08,2025,Aralik,12,Bilgi Teknolojileri,Yazilim Lisans,gider,5160,Yazilim Lisans - Bilgi Teknolojileri
+2025-12-08,2025,Aralik,12,Bilgi Teknolojileri,Yazilim Lisans,gider,23130,Yazilim Lisans - Bilgi Teknolojileri
+2025-12-02,2025,Aralik,12,Bilgi Teknolojileri,Donanim,gider,30890,Donanim - Bilgi Teknolojileri
+2025-12-01,2025,Aralik,12,Bilgi Teknolojileri,Personel,gider,20380,Personel - Bilgi Teknolojileri
+2025-12-18,2025,Aralik,12,Bilgi Teknolojileri,Personel,gider,156230,Personel - Bilgi Teknolojileri
+2025-12-07,2025,Aralik,12,Bilgi Teknolojileri,Bakim Onarim,gider,8190,Bakim Onarim - Bilgi Teknolojileri
+2025-12-25,2025,Aralik,12,Bilgi Teknolojileri,Bakim Onarim,gider,7700,Bakim Onarim - Bilgi Teknolojileri
+2025-12-10,2025,Aralik,12,Bilgi Teknolojileri,Bakim Onarim,gider,4180,Bakim Onarim - Bilgi Teknolojileri
+2025-12-08,2025,Aralik,12,Insan Kaynaklari,Personel,gider,116420,Personel - Insan Kaynaklari
+2025-12-06,2025,Aralik,12,Insan Kaynaklari,Egitim,gider,23440,Egitim - Insan Kaynaklari
+2025-12-13,2025,Aralik,12,Insan Kaynaklari,Danismanlik,gider,14730,Danismanlik - Insan Kaynaklari
+2025-12-01,2025,Aralik,12,Uretim,Personel,gider,155420,Personel - Uretim
+2025-12-10,2025,Aralik,12,Uretim,Personel,gider,149590,Personel - Uretim
+2025-12-19,2025,Aralik,12,Uretim,Personel,gider,141630,Personel - Uretim
+2025-12-18,2025,Aralik,12,Uretim,Bakim Onarim,gider,14450,Bakim Onarim - Uretim
+2025-12-17,2025,Aralik,12,Uretim,Bakim Onarim,gider,50220,Bakim Onarim - Uretim
+2025-12-06,2025,Aralik,12,Uretim,Donanim,gider,27230,Donanim - Uretim
+2025-12-24,2025,Aralik,12,Uretim,Donanim,gider,11220,Donanim - Uretim
+2025-12-15,2025,Aralik,12,Uretim,Donanim,gider,6550,Donanim - Uretim
+2025-12-26,2025,Aralik,12,Finans,Personel,gider,153870,Personel - Finans
+2025-12-28,2025,Aralik,12,Finans,Danismanlik,gider,25330,Danismanlik - Finans
+2025-12-22,2025,Aralik,12,Finans,Yazilim Lisans,gider,17120,Yazilim Lisans - Finans
+2025-12-04,2025,Aralik,12,Finans,Yazilim Lisans,gider,2880,Yazilim Lisans - Finans
+2025-12-13,2025,Aralik,12,Ar-Ge,Personel,gider,241370,Personel - Ar-Ge
+2025-12-08,2025,Aralik,12,Ar-Ge,Personel,gider,1760,Personel - Ar-Ge
+2025-12-01,2025,Aralik,12,Ar-Ge,Donanim,gider,18950,Donanim - Ar-Ge
+2025-12-09,2025,Aralik,12,Ar-Ge,Donanim,gider,45360,Donanim - Ar-Ge
+2025-12-15,2025,Aralik,12,Ar-Ge,Yazilim Lisans,gider,31780,Yazilim Lisans - Ar-Ge
+2025-12-23,2025,Aralik,12,Lojistik,Lojistik Nakliye,gider,37040,Lojistik Nakliye - Lojistik
+2025-12-04,2025,Aralik,12,Lojistik,Lojistik Nakliye,gider,35620,Lojistik Nakliye - Lojistik
+2025-12-21,2025,Aralik,12,Lojistik,Lojistik Nakliye,gider,30890,Lojistik Nakliye - Lojistik
+2025-12-15,2025,Aralik,12,Lojistik,Personel,gider,17610,Personel - Lojistik
+2025-12-24,2025,Aralik,12,Lojistik,Personel,gider,76320,Personel - Lojistik
+2025-12-20,2025,Aralik,12,Lojistik,Personel,gider,38120,Personel - Lojistik
+2025-12-27,2025,Aralik,12,Lojistik,Bakim Onarim,gider,8580,Bakim Onarim - Lojistik
+2025-12-07,2025,Aralik,12,Lojistik,Bakim Onarim,gider,9080,Bakim Onarim - Lojistik
+2025-12-22,2025,Aralik,12,Satis,Urun Satisi,gelir,2312500,Urun Satisi geliri
+2025-12-28,2025,Aralik,12,Satis,Hizmet Geliri,gelir,742400,Hizmet Geliri geliri
+2025-12-17,2025,Aralik,12,Satis,Bayi Geliri,gelir,498300,Bayi Geliri geliri
