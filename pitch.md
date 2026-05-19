@@ -52,7 +52,7 @@ DataSource soyutlamasi - MVP'de CSV demo veri seti.
 ERP / SAP Entegrasyonu:
 Gercek senaryoda SAP S/4HANA verisi OData REST servisleri uzerinden okunur.
 Veri kaynagi soyutlandigi icin analiz ve panel katmani degismez.
-Detay: `docs/MIMARI.md`.
+Detay: `docs/ARCHITECTURE.md`.
 
 ## Demo Kapanis Cumlesi
 

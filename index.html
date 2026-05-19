@@ -7,91 +7,217 @@
   <link rel="stylesheet" href="styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
 </head>
-<body>
-  <header class="topbar">
+<body class="drawer-open">
+  <header class="navbar">
+    <button id="drawerToggle" class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
     <div class="brand">
       <div class="logo">EP</div>
       <div>
         <h1>ERPilot AI</h1>
-        <p>AI entegre kurumsal finans asistani</p>
+        <p data-i18n="brandSub">AI entegre kurumsal finans asistani</p>
       </div>
     </div>
-    <div class="status" id="statusBar">
+    <div class="nav-right">
       <span class="badge" id="sourceBadge">veri: -</span>
       <span class="badge" id="geminiBadge">AI: -</span>
+      <select id="langSelect" class="nav-select" aria-label="Dil">
+        <option value="tr">TR</option>
+        <option value="en">EN</option>
+      </select>
+      <button id="themeToggle" class="theme-btn" aria-label="Tema">🌙</button>
     </div>
   </header>
 
-  <main class="layout">
-    <section class="dashboard">
-      <div class="kpi-row" id="kpiRow">
-        <div class="kpi-card"><span>Toplam Gelir</span><strong id="kpiGelir">-</strong></div>
-        <div class="kpi-card"><span>Toplam Gider</span><strong id="kpiGider">-</strong></div>
-        <div class="kpi-card"><span>Net Kar</span><strong id="kpiNet">-</strong></div>
-        <div class="kpi-card"><span>Kar Marji</span><strong id="kpiMarj">-</strong></div>
-      </div>
+  <div class="shell">
+    <nav class="drawer" id="drawer">
+      <a class="nav-item" data-page="genel" href="#genel">
+        <span class="nav-ico">▦</span> <span data-i18n="navGenel">Genel Bakis</span>
+      </a>
+      <a class="nav-item" data-page="trend" href="#trend">
+        <span class="nav-ico">📈</span> <span data-i18n="navTrend">Gelir / Gider Trendi</span>
+      </a>
+      <a class="nav-item" data-page="butce" href="#butce">
+        <span class="nav-ico">▥</span> <span data-i18n="navButce">Butce vs Gerceklesen</span>
+      </a>
+      <a class="nav-item" data-page="kategori" href="#kategori">
+        <span class="nav-ico">◴</span> <span data-i18n="navKategori">Kategori Dagilimi</span>
+      </a>
+      <a class="nav-item" data-page="anomali" href="#anomali">
+        <span class="nav-ico">⚠</span> <span data-i18n="navAnomali">Anomaliler</span>
+      </a>
+      <a class="nav-item" data-page="sor" href="#sor">
+        <span class="nav-ico">💬</span> <span data-i18n="navSor">Veriye Sor</span>
+      </a>
+    </nav>
 
-      <div class="chart-card">
-        <div class="card-head">
-          <h2>Gelir / Gider Trendi</h2>
-          <span class="card-period" id="periodTrend">-</span>
-        </div>
-        <div class="chart-box"><canvas id="trendChart"></canvas></div>
-        <div class="insight" id="insightTrend">Analiz yukleniyor...</div>
-      </div>
+    <main class="content">
+      <!-- GENEL BAKIS -->
+      <section class="page" id="page-genel">
+        <h2 class="page-title" data-i18n="navGenel">Genel Bakis</h2>
+        <div class="genel-layout">
+          <div class="dashboard-col">
+            <div class="kpi-row">
+              <div class="kpi-card"><span data-i18n="kpiGelir">Toplam Gelir</span><strong id="kpiGelir">-</strong></div>
+              <div class="kpi-card"><span data-i18n="kpiGider">Toplam Gider</span><strong id="kpiGider">-</strong></div>
+              <div class="kpi-card"><span data-i18n="kpiNet">Net Kar</span><strong id="kpiNet">-</strong></div>
+              <div class="kpi-card"><span data-i18n="kpiMarj">Kar Marji</span><strong id="kpiMarj">-</strong></div>
+            </div>
 
-      <div class="chart-card">
-        <div class="card-head">
-          <h2>Butce vs Gerceklesen (Departman)</h2>
-          <span class="card-period" id="periodBudget">-</span>
-        </div>
-        <div class="chart-box"><canvas id="budgetChart"></canvas></div>
-        <div class="insight" id="insightBudget">Analiz yukleniyor...</div>
-      </div>
+            <div class="chart-card">
+              <div class="card-head">
+                <h2 data-i18n="navTrend">Gelir / Gider Trendi</h2>
+                <span class="card-period" id="ovPeriodTrend">-</span>
+              </div>
+              <div class="chart-box"><canvas id="ovTrendChart"></canvas></div>
+              <div class="insight"><strong class="insight-label" data-i18n="insightLabel">AI yorumu:</strong> <span id="ovTrendIns">-</span></div>
+            </div>
 
-      <div class="chart-card">
-        <div class="card-head">
-          <h2>Gider Kategori Dagilimi</h2>
-          <span class="card-period" id="periodCategory">-</span>
-        </div>
-        <div class="chart-box"><canvas id="categoryChart"></canvas></div>
-        <div class="insight" id="insightCategory">Analiz yukleniyor...</div>
-      </div>
+            <div class="chart-card">
+              <div class="card-head">
+                <h2 data-i18n="navButce">Butce vs Gerceklesen</h2>
+                <span class="card-period" id="ovPeriodBudget">-</span>
+              </div>
+              <div class="chart-box"><canvas id="ovBudgetChart"></canvas></div>
+              <div class="insight"><strong class="insight-label" data-i18n="insightLabel">AI yorumu:</strong> <span id="ovBudgetIns">-</span></div>
+            </div>
 
-      <div class="chart-card anomaly-card">
-        <div class="card-head">
-          <h2>Anomali Tespiti</h2>
-          <span class="card-period" id="periodAnomaly">-</span>
-        </div>
-        <div class="insight warn" id="insightAnomaly">Analiz yukleniyor...</div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr><th>Tarih</th><th>Departman</th><th>Kategori</th><th>Tutar</th><th>Sapma</th></tr>
-            </thead>
-            <tbody id="anomalyTable"></tbody>
-          </table>
-        </div>
-      </div>
-    </section>
+            <div class="chart-card">
+              <div class="card-head">
+                <h2 data-i18n="cardKategori">Gider Kategori Dagilimi</h2>
+                <span class="card-period" id="ovPeriodCategory">-</span>
+              </div>
+              <div class="chart-box"><canvas id="ovCategoryChart"></canvas></div>
+              <div class="insight"><strong class="insight-label" data-i18n="insightLabel">AI yorumu:</strong> <span id="ovCategoryIns">-</span></div>
+            </div>
 
-    <aside class="chat-panel">
-      <div class="chat-head">
-        <h2>Veriye Sor</h2>
-        <p>Dogal dilde soru sor; AI gercek veriyi sorgular.</p>
-      </div>
-      <div class="chat-window" id="chatWindow"></div>
-      <div class="quick-prompts">
-        <button data-prompt="Ocak ayinda en fazla harcama hangi departmanda?">Ocak'ta en cok harcayan departman</button>
-        <button data-prompt="Toplam gelir ne kadar?">Toplam gelir</button>
-        <button data-prompt="En buyuk gider kategorisi nedir?">En buyuk gider kalemi</button>
-      </div>
-      <form class="chat-form" id="chatForm">
-        <input id="chatInput" type="text" placeholder="Verilere bir soru sorun..." autocomplete="off" />
-        <button type="submit">Sor</button>
-      </form>
-    </aside>
-  </main>
+            <div class="chart-card anomaly-card">
+              <div class="card-head">
+                <h2 data-i18n="cardAnomali">Anomali Tespiti</h2>
+                <span class="card-period" id="ovPeriodAnomaly">-</span>
+              </div>
+              <div class="insight warn"><strong class="insight-label" data-i18n="insightLabel">AI yorumu:</strong> <span id="ovAnomalyIns">-</span></div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th data-i18n="thTarih">Tarih</th><th data-i18n="thDepartman">Departman</th>
+                      <th data-i18n="thKategori">Kategori</th><th data-i18n="thTutar">Tutar</th>
+                      <th data-i18n="thSapma">Sapma</th>
+                    </tr>
+                  </thead>
+                  <tbody id="ovAnomalyTable"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <aside class="chat-col">
+            <div class="chat-card">
+              <div class="chat-head">
+                <h3 data-i18n="navSor">Veriye Sor</h3>
+                <p data-i18n="chatDesc">Dogal dilde soru sor; AI gercek veriyi sorgular.</p>
+              </div>
+              <div class="chat-window" id="ovChatWindow"></div>
+              <div class="quick-prompts" id="ovQuickPrompts">
+                <button data-prompt="Ocak ayinda en fazla harcama hangi departmanda?" data-i18n="qp1">Ocak'ta en cok harcayan departman</button>
+                <button data-prompt="Toplam gelir ne kadar?" data-i18n="qp2">Toplam gelir</button>
+                <button data-prompt="En buyuk gider kategorisi nedir?" data-i18n="qp3">En buyuk gider kalemi</button>
+              </div>
+              <form class="chat-form" id="ovChatForm">
+                <input id="ovChatInput" type="text" data-i18n-ph="chatPlaceholder" placeholder="Verilere bir soru sorun..." autocomplete="off" />
+                <button type="submit" data-i18n="chatSend">Sor</button>
+              </form>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- TREND -->
+      <section class="page" id="page-trend">
+        <h2 class="page-title" data-i18n="navTrend">Gelir / Gider Trendi</h2>
+        <div class="chart-card">
+          <div class="card-head">
+            <h2 data-i18n="cardTrendSub">Aylik Seyir</h2>
+            <span class="card-period" id="periodTrend">-</span>
+          </div>
+          <div class="chart-box"><canvas id="trendChart"></canvas></div>
+          <div class="insight"><strong class="insight-label" data-i18n="insightLabel">AI yorumu:</strong> <span id="insightTrend">-</span></div>
+        </div>
+      </section>
+
+      <!-- BUTCE -->
+      <section class="page" id="page-butce">
+        <h2 class="page-title" data-i18n="navButce">Butce vs Gerceklesen</h2>
+        <div class="chart-card">
+          <div class="card-head">
+            <h2 data-i18n="cardButceSub">Departman Bazli</h2>
+            <select class="month-select" id="monthButce"></select>
+          </div>
+          <div class="chart-box"><canvas id="budgetChart"></canvas></div>
+          <div class="insight"><strong class="insight-label" data-i18n="insightLabel">AI yorumu:</strong> <span id="insightBudget">-</span></div>
+        </div>
+      </section>
+
+      <!-- KATEGORI -->
+      <section class="page" id="page-kategori">
+        <h2 class="page-title" data-i18n="cardKategori">Gider Kategori Dagilimi</h2>
+        <div class="chart-card">
+          <div class="card-head">
+            <h2 data-i18n="cardKategoriSub">Kategori Payi</h2>
+            <select class="month-select" id="monthKategori"></select>
+          </div>
+          <div class="chart-box"><canvas id="categoryChart"></canvas></div>
+          <div class="insight"><strong class="insight-label" data-i18n="insightLabel">AI yorumu:</strong> <span id="insightCategory">-</span></div>
+        </div>
+      </section>
+
+      <!-- ANOMALI -->
+      <section class="page" id="page-anomali">
+        <h2 class="page-title" data-i18n="cardAnomali">Anomali Tespiti</h2>
+        <div class="chart-card anomaly-card">
+          <div class="card-head">
+            <h2 data-i18n="cardAnomaliSub">Alisilmadik Harcamalar</h2>
+            <select class="month-select" id="monthAnomali"></select>
+          </div>
+          <div class="insight warn"><strong class="insight-label" data-i18n="insightLabel">AI yorumu:</strong> <span id="insightAnomaly">-</span></div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th data-i18n="thTarih">Tarih</th><th data-i18n="thDepartman">Departman</th>
+                  <th data-i18n="thKategori">Kategori</th><th data-i18n="thTutar">Tutar</th>
+                  <th data-i18n="thSapma">Sapma</th>
+                </tr>
+              </thead>
+              <tbody id="anomalyTable"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- VERIYE SOR -->
+      <section class="page" id="page-sor">
+        <h2 class="page-title" data-i18n="navSor">Veriye Sor</h2>
+        <div class="chat-card">
+          <div class="chat-head">
+            <p data-i18n="chatDesc">Dogal dilde soru sor; AI gercek veriyi sorgular.</p>
+          </div>
+          <div class="chat-window" id="chatWindow"></div>
+          <div class="quick-prompts" id="quickPrompts">
+            <button data-prompt="Ocak ayinda en fazla harcama hangi departmanda?" data-i18n="qp1">Ocak'ta en cok harcayan departman</button>
+            <button data-prompt="Toplam gelir ne kadar?" data-i18n="qp2">Toplam gelir</button>
+            <button data-prompt="En buyuk gider kategorisi nedir?" data-i18n="qp3">En buyuk gider kalemi</button>
+          </div>
+          <form class="chat-form" id="chatForm">
+            <input id="chatInput" type="text" data-i18n-ph="chatPlaceholder" placeholder="Verilere bir soru sorun..." autocomplete="off" />
+            <button type="submit" data-i18n="chatSend">Sor</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
 
   <script src="app.js"></script>
 </body>

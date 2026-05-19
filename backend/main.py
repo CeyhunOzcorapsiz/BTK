@@ -4,9 +4,10 @@ ERPilot AI - FastAPI REST backend.
 Endpoint'ler:
   GET  /api/health        - saglik kontrolu
   POST /api/chat          - veriye dogal dil sorusu (Gemini function calling)
+  GET  /api/dashboard     - trend, butce, kategori (opsiyonel ?ay=)
+  GET  /api/anomalies     - anomali listesi (opsiyonel ?ay=)
+  GET  /api/insights      - grafik basina AI yorumu (opsiyonel ?ay=)
   GET  /api/transactions  - ham hareket verisi (filtreli)
-
-Dashboard / insights / anomalies endpoint'leri Gun 2'de eklenecek.
 """
 
 from __future__ import annotations
@@ -23,7 +24,7 @@ from slowapi import Limiter
 from slowapi.errors import RateLimitExceeded
 from slowapi.util import get_remote_address
 
-from analytics import build_dashboard, build_insights
+from analytics import available_months, build_dashboard, build_insights
 from anomaly import detect_anomalies
 from config import PROJECT_DIR, settings
 from datasource import DataSourceError, get_data_source
@@ -58,6 +59,19 @@ app.add_middleware(
 )
 
 
+@app.middleware("http")
+async def _no_cache_static(request: Request, call_next):
+    """
+    Frontend dosyalari (html/css/js) icin tarayici her istekte sunucuyu
+    dogrular. Boylece kod degisince eski surum onbellekten servis edilmez.
+    """
+    response = await call_next(request)
+    path = request.url.path
+    if path == "/" or path.endswith((".html", ".css", ".js")):
+        response.headers["Cache-Control"] = "no-cache, must-revalidate"
+    return response
+
+
 # --- Tutarli hata govdesi ----------------------------------------------------
 
 def _error(status: int, code: str, message: str) -> JSONResponse:
@@ -89,10 +103,23 @@ async def _generic_handler(request: Request, exc: Exception):
     return _error(500, "internal_error", "Beklenmeyen bir hata olustu.")
 
 
+def _resolve_ay(ay: str | None) -> tuple[str | None, JSONResponse | None]:
+    """
+    ?ay= parametresini dogrular. Donus: (gecerli_ay, hata_yaniti).
+    ay bos ise (None, None); gecersizse (None, 400 hata); gecerliyse (ay, None).
+    """
+    if not ay:
+        return None, None
+    if ay not in available_months(state["transactions"]):
+        return None, _error(400, "invalid_month", f"Gecersiz ay: {ay}")
+    return ay, None
+
+
 # --- Semalar -----------------------------------------------------------------
 
 class ChatRequest(BaseModel):
     message: str = Field(min_length=1, max_length=500)
+    lang: str = Field(default="tr", max_length=5)
 
 
 class ChatResponse(BaseModel):
@@ -122,7 +149,7 @@ async def chat(request: Request, body: ChatRequest) -> ChatResponse:
     # gemini_client agirsiklikli import edilir (httpx vb. yalnizca gerektiginde)
     from gemini_client import answer_question
 
-    result = await answer_question(body.message, state["transactions"])
+    result = await answer_question(body.message, state["transactions"], body.lang)
     return ChatResponse(
         answer=result["answer"],
         provider=result["provider"],
@@ -152,24 +179,36 @@ async def transactions(
 
 
 @app.get("/api/dashboard")
-async def dashboard() -> dict:
-    return build_dashboard(state["transactions"], state["budgets"])
+async def dashboard(ay: str | None = Query(default=None)):
+    ay_val, err = _resolve_ay(ay)
+    if err:
+        return err
+    return build_dashboard(state["transactions"], state["budgets"], ay_val)
 
 
 @app.get("/api/anomalies")
-async def anomalies() -> dict:
-    bulgular = detect_anomalies(state["transactions"])
-    return {"count": len(bulgular), "anomalies": bulgular}
+async def anomalies(ay: str | None = Query(default=None)):
+    ay_val, err = _resolve_ay(ay)
+    if err:
+        return err
+    bulgular = detect_anomalies(state["transactions"], ay_val)
+    return {"count": len(bulgular), "secili_ay": ay_val, "anomalies": bulgular}
 
 
 @app.get("/api/insights")
-async def insights() -> dict:
+async def insights(ay: str | None = Query(default=None)):
     from gemini_client import generate_insights
 
-    dash = build_dashboard(state["transactions"], state["budgets"])
-    anomaly_count = len(detect_anomalies(state["transactions"]))
-    deterministic = build_insights(dash, anomaly_count)
-    return await generate_insights(deterministic)
+    ay_val, err = _resolve_ay(ay)
+    if err:
+        return err
+    dash = build_dashboard(state["transactions"], state["budgets"], ay_val)
+    anomaly_count = len(detect_anomalies(state["transactions"], ay_val))
+    deterministic = {
+        "tr": build_insights(dash, anomaly_count, "tr"),
+        "en": build_insights(dash, anomaly_count, "en"),
+    }
+    return await generate_insights(deterministic, ay_val)
 
 
 # --- Frontend statik dosyalari (API route'larindan SONRA mount edilir) -------

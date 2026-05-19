@@ -21,8 +21,16 @@ IQR_MULTIPLIER = 2.0
 MIN_GROUP_SIZE = 4  # IQR'in anlamli olmasi icin minimum hareket sayisi
 
 
-def detect_anomalies(transactions: pd.DataFrame) -> list[dict]:
-    """Alisilmadik yuksek gider hareketlerini dondurur (buyukten kucuge)."""
+def detect_anomalies(
+    transactions: pd.DataFrame, ay: str | None = None
+) -> list[dict]:
+    """
+    Alisilmadik yuksek gider hareketlerini dondurur (buyukten kucuge).
+
+    IQR esikleri HER ZAMAN tum yil verisi uzerinden hesaplanir (dagilimin
+    anlamli olmasi icin). 'ay' verilirse yalnizca sonuc listesi o aya gore
+    filtrelenir - esik degismez.
+    """
     giderler = transactions[transactions["tur"] == "gider"]
     bulgular: list[dict] = []
 
@@ -50,4 +58,6 @@ def detect_anomalies(transactions: pd.DataFrame) -> list[dict]:
                 "aciklama": str(satir["aciklama"]),
             })
 
+    if ay:
+        bulgular = [b for b in bulgular if b["ay"] == ay]
     return sorted(bulgular, key=lambda b: b["sapma_yuzde"], reverse=True)

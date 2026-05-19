@@ -4,8 +4,8 @@
 
 ```mermaid
 flowchart TB
-    subgraph FE[Frontend]
-        UI["Dashboard + Chat<br/>HTML / JS / Chart.js"]
+    subgraph FE[Frontend - cok sayfali SPA]
+        UI["Navbar + sol drawer<br/>6 sayfa - Chart.js<br/>dark/light + TR/EN"]
     end
     subgraph BE[FastAPI Backend]
         API["REST API<br/>/api/chat, /api/dashboard,<br/>/api/anomalies, /api/insights"]
@@ -36,13 +36,21 @@ flowchart TB
 
 Katmanlar:
 
-- **Frontend** — statik dashboard ve chat paneli; backend ile yalnizca REST uzerinden konusur.
-- **REST API** — kaynak odakli endpoint'ler; Pydantic ile girdi/cikti dogrulamasi.
-- **Rate Limiting** — IP basina limit, Gemini'ye es zamanli istek sinirlamasi, TTL cache, tek httpx istemcisi.
-- **Gemini Client** — function calling akisi ve dashboard AI yorumlari; konu disi sorulari mimari duzeyde reddeder.
-- **Query Engine** — AI'in urettigi yapisal sorguyu allowlist'e karsi dogrular ve sabit pandas islemleriyle calistirir.
-- **Analytics / Anomaly** — dashboard agregasyonlari, deterministik yorum tabani ve IQR tabanli anomali tespiti.
-- **DataSource** — veri kaynagini soyutlar; is mantigi CSV mi SAP mi oldugunu bilmez.
+- **Frontend** — navbar + soldan acilan drawer ile gezilen 6 sayfali tek
+  sayfa uygulamasi (Genel Bakis, Trend, Butce, Kategori, Anomali, Veriye Sor).
+  Hash tabanli yonlendirme, Chart.js grafikler, dark/light tema ve TR/EN dil
+  destegi. Backend ile yalnizca REST uzerinden konusur.
+- **REST API** — kaynak odakli endpoint'ler; Pydantic ile girdi/cikti
+  dogrulamasi. Dashboard/anomali/insight endpoint'leri opsiyonel `?ay=` alir.
+- **Rate Limiting** — IP basina limit, Gemini'ye es zamanli istek sinirlamasi,
+  TTL cache, tek httpx istemcisi.
+- **Gemini Client** — function calling akisi ve dashboard AI yorumlari; konu
+  disi sorulari mimari duzeyde reddeder.
+- **Query Engine** — AI'in urettigi yapisal sorguyu allowlist'e karsi dogrular
+  ve sabit pandas islemleriyle calistirir.
+- **Analytics / Anomaly** — dashboard agregasyonlari (ay filtreli),
+  deterministik yorum tabani ve IQR tabanli anomali tespiti.
+- **DataSource** — veri kaynagini soyutlar; is mantigi CSV mi SAP mi bilmez.
 
 ## 2. "Veriye Sor" Akisi (function calling + guvenlik)
 
@@ -56,7 +64,7 @@ sequenceDiagram
     participant D as Veri (pandas)
 
     U->>F: Dogal dil sorusu
-    F->>B: POST /api/chat
+    F->>B: POST /api/chat (message, lang)
     B->>G: Soru + query_finance_data tanimi
     alt Konu disi soru (kodlama, sohbet)
         G-->>B: Fonksiyon CAGRILMAZ
@@ -68,7 +76,7 @@ sequenceDiagram
         D-->>Q: Gercek sayilar
         Q-->>B: Sonuc
         B->>G: Ozetle (spec + sonuc, ham kullanici metni YOK)
-        G-->>B: Dogal dil cevap
+        G-->>B: Dogal dil cevap (secilen dilde)
         B-->>F: Cevap
     end
 ```
@@ -108,8 +116,7 @@ flowchart LR
 
 ### Entegrasyon yontemi
 
-`SapDataSource`, SAP S/4HANA'nin **OData REST servislerine** `httpx` ile baglanir.
-Adimlar:
+`SapDataSource`, SAP S/4HANA'nin **OData REST servislerine** `httpx` ile baglanir:
 
 1. SAP OData endpoint'ine kimlik dogrulamali GET istegi (OAuth2 / Basic).
 2. Donen JSON `results` listesi pandas DataFrame'e cevrilir.
@@ -133,3 +140,20 @@ Alternatif: `pyrfc` ile dogrudan BAPI/RFC cagrisi (SAP NW RFC SDK gerektirir).
 
 `.env` icinde `DATA_SOURCE=csv` -> `DATA_SOURCE=sap` degisikligi yeterlidir.
 `query_engine`, `analytics`, `anomaly` ve frontend katmanlarinda **hicbir degisiklik gerekmez**.
+
+## 4. Dil Destegi ve Insight Cache (Optimizasyon)
+
+Arayuz TR/EN destekler. AI uretilen metinleri her dil degisiminde yeniden
+uretmek maliyetli olacagi icin su yaklasim kullanilir:
+
+- **Insight'lar** statik veriden uretilir; bir ayin yorumu hic degismez.
+  Bu yuzden Gemini **tek cagrida hem TR hem EN** uretir ve sonuc **kalici
+  cache**'lenir (TTL yok). Dil degisince yeni API cagrisi yapilmaz - cache'ten
+  gelir. Maliyet: ay basina 1 cagri, omur boyu (~13 cagri toplam).
+- **Chat** cevaplari tek seferliktir; istek ile gelen `lang` parametresine
+  gore Gemini zaten yaptigi tek cagrida secilen dilde yanitlar - ek maliyet yok.
+- **Fallback** (API key yoksa) deterministik metinler hem TR hem EN kodda
+  hazirdir - sifir maliyet.
+
+> Not: Tema (dark/light) ve dil secimi `localStorage`'da saklanir; SPA oldugu
+> icin sayfa gecislerinde korunur, tam yenilemede de kalici kalir.

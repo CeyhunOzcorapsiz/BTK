@@ -1,0 +1,12 @@
+# Build context'ten haric tutulanlar
+.git/
+.gitignore
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.claude/
+docs/
+*.md
+pitch.md

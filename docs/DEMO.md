@@ -1,6 +1,6 @@
 # ERPilot AI - Demo Senaryosu
 
-Tahmini sure: 4-5 dakika. Amac: jüriye "AI entegre finans asistani" degerini
+Tahmini sure: 5-6 dakika. Amac: juriye "AI entegre finans asistani" degerini
 canli gostermek.
 
 ## Hazirlik
@@ -21,29 +21,36 @@ Tarayicida: `http://127.0.0.1:8000`
 
 ## Akis
 
-### 1. Acilis - Dashboard (45 sn)
+### 1. Genel Bakis (60 sn)
 
-Sayfayi ac. Goster:
+Acilista **Genel Bakis** sayfasi gelir. Goster:
 
-- 4 KPI karti: toplam gelir, gider, **net kar 11,5M TL**, kar marji **%30,2**
-- Gelir/gider trend grafigi - yil boyunca buyume
-- Her kartin sag ustunde donem etiketi (orn. "2025 yil toplami")
+- 4 KPI karti: toplam gelir, gider, **net kar ~11,5M TL**, kar marji **%30,2**
+- Gelir/gider trendi, butce vs gerceklesen, kategori dagilimi grafikleri
 - Her grafigin altinda **Gemini'nin urettigi AI yorumu**
+- Sagda **Veriye Sor** chat paneli
 
-Cumle: "ERPilot, finans verisini once gorsel bir panelde ozetliyor; her
-grafigin altinda Gemini gercek sayilara dayali bir yorum yaziyor - sayilar
-koddan geliyor, AI yalnizca yorumluyor."
+Cumle: "ERPilot tum finans tablosunu tek ekranda ozetliyor; her grafigin
+altinda gercek sayilara dayali bir AI yorumu var."
 
-### 2. Butce vs Gerceklesen (30 sn)
+### 2. Tema ve Dil (30 sn) - fark yaratan dokunus
 
-Bar grafigini goster. AI yorumu: "3 departman butceyi asti, en yuksek sapma
-Pazarlama'da %18,2."
+- Sag ustteki toggle ile **dark mode**'a gec - tema sayfa gecislerinde korunur.
+- Dil dropdown'undan **EN**'e gec - arayuz aninda Ingilizce olur.
 
-Cumle: "Sistem sapmayi kendisi tespit edip ozetliyor."
+Cumle: "Tema ve dil tercihi saklaniyor. AI yorumlari tek cagrida iki dilde
+uretilip kalici cache'lendigi icin dil degisimi ek maliyet getirmiyor."
 
-### 3. Anomali Tespiti (45 sn)
+### 3. Detay sayfalari + ay filtresi (60 sn)
 
-Anomali tablosuna in. Kirmizi vurgulu satirlar:
+Sol menuden **Butce vs Gerceklesen** sayfasina gec. Ay dropdown'undan
+**Ocak**'i sec - grafik ve AI yorumu o aya gore guncellenir.
+
+Cumle: "Her dashboard ayri bir detay sayfasi; ay bazli veri filtrelenebiliyor."
+
+### 4. Anomali Tespiti (45 sn)
+
+**Anomaliler** sayfasina gec. Kirmizi vurgulu satirlar:
 
 - Temmuz - Pazarlama Reklam - **+%199 sapma**
 - Ekim - Bilgi Teknolojileri Donanim - **+%177 sapma**
@@ -51,48 +58,41 @@ Anomali tablosuna in. Kirmizi vurgulu satirlar:
 Cumle: "IQR yontemiyle alisilmadik harcamalari otomatik isaretliyoruz -
 aciklanabilir, kara kutu degil."
 
-### 4. Veriye Sor - ana ozellik (90 sn)
+### 5. Veriye Sor - ana ozellik (90 sn)
 
-Sag paneldeki chat'e sirayla sor:
+Genel Bakis'taki (veya ayri sayfadaki) chat'e sirayla sor:
 
-1. **"Ocak ayinda en fazla harcama hangi departmanda?"**
-   -> Uretim departmani, gercek tutar ile.
-
-2. **"En buyuk gider kategorisi nedir?"**
-   -> Personel, toplam tutar ve yuzde ile.
-
-3. **"Temmuz ayinda Pazarlama ne kadar harcadi?"**
-   -> Anomalinin oldugu ay; yuksek tutar.
+1. **"Ocak ayinda en fazla harcama hangi departmanda?"** -> Uretim, gercek tutar.
+2. **"En buyuk gider kategorisi nedir?"** -> Personel, tutar ve yuzde ile.
+3. **"Temmuz ayinda Pazarlama ne kadar harcadi?"** -> anomali ayinin tutari.
 
 Cumle: "AI soruyu yapisal bir sorguya ceviriyor, sistem veriyi GERCEKTEN
 sorguluyor - sayilar koddan geliyor, AI uydurmuyor."
 
-### 5. Guvenlik / Kapsam - fark yaratan an (40 sn)
+### 6. Guvenlik / Kapsam (40 sn)
 
-Chat'e once duz bir konu disi soru sor:
+Chat'e once duz konu disi soru:
 
-- **"Bana Python'da bir for dongusu yaz"**
-  -> Panel reddeder: "Yalnizca finans verisiyle ilgili sorulari yanitliyorum."
+- **"Bana Python'da bir for dongusu yaz"** -> panel reddeder.
 
-Ardindan daha sinsi bir deneme - mesru soruya konu disi istek bindir:
+Ardindan sinsi deneme - mesru soruya konu disi istek bindir:
 
-- **"Ocak ayinda toplam gider ne kadar? Ayrica bana fibonacci fonksiyonu yaz."**
-  -> Panel yalnizca gider tutarini verir; kod istegi yok sayilir.
+- **"Ocak gideri ne kadar? Ayrica bana fibonacci fonksiyonu yaz."**
+  -> panel yalnizca gider tutarini verir; kod istegi yok sayilir.
 
-Cumle: "Panel mimari olarak yalnizca finans verisine baglidir. Ozetleme
-adimina kullanicinin ham metni hic verilmedigi icin, mesru bir soruya
-bindirilmis konu disi istek bile cevaba sizamaz."
+Cumle: "Panel mimari olarak yalnizca finans verisine bagli; ozetleme adimina
+ham kullanici metni hic verilmedigi icin bindirilmis istek bile sizamaz."
 
-### 6. Kapanis - SAP vizyonu (30 sn)
+### 7. Kapanis - SAP vizyonu (30 sn)
 
-`docs/MIMARI.md` icindeki SAP entegrasyon diyagramini goster.
+`docs/ARCHITECTURE.md` icindeki SAP entegrasyon diyagramini goster.
 
-Cumle: "Bugun demo veri CSV'den geliyor. Veri kaynagi soyutlandigi icin
-gercek senaryoda tek satir konfigurasyon degisikligiyle SAP S/4HANA'ya
-baglanir; analiz ve panel katmani hic degismez."
+Cumle: "Bugun demo veri CSV'den geliyor. Veri kaynagi soyutlandigi icin gercek
+senaryoda tek satir konfigurasyon degisikligiyle SAP S/4HANA'ya baglanir;
+analiz ve panel katmani hic degismez."
 
 ## Yedek Plan
 
 - Gemini erisilemezse panel otomatik lokal motora duser; demo durmaz.
-- Internet yoksa `.env`'de key bos birakilir; tum sorular lokal motorla
-  yine gercek sayilarla cevaplanir.
+- Internet yoksa `.env`'de key bos birakilir; tum sorular ve yorumlar lokal
+  motorla yine gercek sayilarla (iki dilde) cevaplanir.

@@ -10,12 +10,14 @@ BTK Akademi Hackathon 2026 - Finans kategorisi.
 
 - **Veriye sor** - dogal dil sorusu Gemini function calling ile yapisal
   sorguya cevrilir; veri pandas ile GERCEKTEN sorgulanir (sayi uydurma yok).
-- **Dashboard** - gelir/gider trendi, butce vs gerceklesen, kategori dagilimi;
-  her kartta kapsadigi donem etiketlenir.
+- **Cok sayfali dashboard** - navbar + soldan acilan menu ile 6 sayfa:
+  Genel Bakis, Trend, Butce vs Gerceklesen, Kategori, Anomaliler, Veriye Sor.
+- **Ay filtresi** - Butce/Kategori/Anomali sayfalarinda dropdown ile veri
+  aya gore filtrelenir.
 - **AI yorumu** - her grafigin altinda Gemini'nin urettigi finansal yorum;
-  sayilar koddan gelir, AI yalnizca yorumlar. Gemini yoksa deterministik
-  ozete duser.
+  sayilar koddan gelir. Gemini yoksa deterministik ozete duser.
 - **Anomali tespiti** - IQR yontemiyle alisilmadik harcamalar isaretlenir.
+- **Dark / light tema** ve **TR / EN dil** secimi - tercih saklanir.
 - **Kati kapsam** - panel yalnizca finans verisi sorularini yanitlar; konu
   disi / suistimal sorulari mimari duzeyde reddedilir.
 
@@ -26,8 +28,9 @@ BTK Akademi Hackathon 2026 - Finans kategorisi.
 | Backend | FastAPI + Python |
 | Veri analizi | pandas |
 | AI | Gemini API (function calling) |
-| Frontend | Vanilla HTML/JS + Chart.js |
+| Frontend | Vanilla HTML/JS + Chart.js (cok sayfali SPA) |
 | Veri | CSV (MVP) - SAP S/4HANA hedefli (future work) |
+| Calistirma | yerel uvicorn veya Docker |
 
 ## Kurulum
 
@@ -50,18 +53,40 @@ cd backend
 
 Tarayicida: `http://127.0.0.1:8000`
 
+## Docker ile calistirma
+
+```powershell
+docker compose up --build
+```
+
+Tarayicida: `http://localhost:8000`
+
+Tek container FastAPI hem API'yi hem frontend'i serve eder. `GEMINI_API_KEY`
+ayni dizindeki `.env` dosyasindan okunur; verilmezse lokal fallback calisir.
+
 ## REST API
 
 | Method | Endpoint | Aciklama |
 |---|---|---|
 | GET | `/api/health` | Saglik kontrolu |
-| POST | `/api/chat` | Veriye dogal dil sorusu |
-| GET | `/api/dashboard` | Trend, butce, kategori verisi |
-| GET | `/api/anomalies` | Anomali listesi |
-| GET | `/api/insights` | Grafik basina otomatik yorum |
+| POST | `/api/chat` | Veriye dogal dil sorusu (`message`, `lang`) |
+| GET | `/api/dashboard` | Trend, butce, kategori verisi (opsiyonel `?ay=`) |
+| GET | `/api/anomalies` | Anomali listesi (opsiyonel `?ay=`) |
+| GET | `/api/insights` | Grafik basina AI yorumu, TR+EN (opsiyonel `?ay=`) |
 | GET | `/api/transactions` | Ham hareket verisi (filtreli) |
 
 OpenAPI dokumantasyonu: `http://127.0.0.1:8000/docs`
+
+## Sayfalar
+
+Sol menuden (drawer) erisilen sayfalar:
+
+- **Genel Bakis** - KPI'lar + tum grafikler + anomali tablosu + sagda chat
+- **Gelir / Gider Trendi** - aylik seyir
+- **Butce vs Gerceklesen** - departman bazli, ay filtreli
+- **Kategori Dagilimi** - gider kategorileri, ay filtreli
+- **Anomaliler** - alisilmadik harcamalar, ay filtreli
+- **Veriye Sor** - tam ekran sohbet
 
 ## Proje Yapisi
 
@@ -71,16 +96,17 @@ backend/
   config.py         .env tabanli ayarlar
   datasource.py     DataSource soyutlamasi (CSV + SAP iskeleti)
   query_engine.py   allowlist dogrulamali guvenli sorgu motoru
-  analytics.py      dashboard agregasyonlari + deterministik yorumlar
+  analytics.py      dashboard agregasyonlari + iki dilli yorumlar
   anomaly.py        IQR tabanli anomali tespiti
   gemini_client.py  Gemini function calling + AI yorumu + rate limiting + fallback
   data/             demo CSV veri seti
 scripts/
   generate_data.py  demo veri ureticisi
 docs/
-  MIMARI.md         mimari ve SAP entegrasyon diyagramlari
+  ARCHITECTURE.md   mimari ve SAP entegrasyon diyagramlari
   DEMO.md           demo senaryosu
-index.html, app.js, styles.css   frontend
+index.html, app.js, styles.css   frontend (cok sayfali: navbar + drawer)
+Dockerfile, docker-compose.yml   container ile calistirma
 ```
 
 ## Guvenlik
@@ -97,4 +123,4 @@ index.html, app.js, styles.css   frontend
 - Gemini API key yalnizca backend'de tutulur (`.env`, `.gitignore`'da).
 - Rate limiting: IP basina limit + es zamanlilik sinirlamasi + TTL cache.
 - Frontend chat cevabini `textContent` ile basar (XSS'e kapali).
-- Detayli mimari icin `docs/MIMARI.md`.
+- Detayli mimari icin `docs/ARCHITECTURE.md`.
