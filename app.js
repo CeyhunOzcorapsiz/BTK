@@ -64,6 +64,22 @@ const I18N = {
 let currentLang = localStorage.getItem("lang") || "tr";
 const t = (k) => (I18N[currentLang] && I18N[currentLang][k]) || I18N.tr[k] || k;
 
+// Ay adlari: option value'su API icin kanonik (TR/ASCII) kalir,
+// yalnizca gosterilen metin dile gore degisir.
+const MONTH_NAMES = {
+  tr: {
+    Ocak: "Ocak", Subat: "Şubat", Mart: "Mart", Nisan: "Nisan",
+    Mayis: "Mayıs", Haziran: "Haziran", Temmuz: "Temmuz", Agustos: "Ağustos",
+    Eylul: "Eylül", Ekim: "Ekim", Kasim: "Kasım", Aralik: "Aralık",
+  },
+  en: {
+    Ocak: "January", Subat: "February", Mart: "March", Nisan: "April",
+    Mayis: "May", Haziran: "June", Temmuz: "July", Agustos: "August",
+    Eylul: "September", Ekim: "October", Kasim: "November", Aralik: "December",
+  },
+};
+const monthLabel = (m) => (MONTH_NAMES[currentLang] || MONTH_NAMES.tr)[m] || m;
+
 // --- Yardimcilar -------------------------------------------------------------
 
 const TL = new Intl.NumberFormat("tr-TR", {
@@ -136,7 +152,9 @@ function applyLang(lang) {
     el.placeholder = t(el.dataset.i18nPh);
   });
   document.querySelectorAll(".month-select").forEach((s) => {
-    if (s.options[0]) s.options[0].textContent = t("allYear");
+    [...s.options].forEach((o) => {
+      o.textContent = o.value ? monthLabel(o.value) : t("allYear");
+    });
   });
   document.querySelectorAll("[data-welcome]").forEach((el) => {
     el.textContent = t("chatWelcome");
@@ -159,7 +177,7 @@ async function loadStatus() {
 function populateMonths(aylar) {
   if (monthsLoaded) return;
   const opts = `<option value="">${t("allYear")}</option>` +
-    aylar.map((a) => `<option value="${a}">${a}</option>`).join("");
+    aylar.map((a) => `<option value="${a}">${monthLabel(a)}</option>`).join("");
   ["monthButce", "monthKategori", "monthAnomali"].forEach((id) => {
     $(id).innerHTML = opts;
   });
@@ -177,7 +195,7 @@ function buildTrendChart(canvasId, trend) {
   charts[canvasId] = new Chart($(canvasId), {
     type: "line",
     data: {
-      labels: trend.map((r) => r.ay),
+      labels: trend.map((r) => monthLabel(r.ay)),
       datasets: [
         { label: t("chartGelir"), data: trend.map((r) => r.gelir),
           borderColor: "#16a34a", backgroundColor: "#16a34a22", tension: .3, fill: true },
